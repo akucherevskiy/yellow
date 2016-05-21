@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prostir Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Prostir</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ app.url_generator.generate('admin_about') }}">About</a></li>
+                <li><a href="{{ app.url_generator.generate('admin_coworking') }}">Coworking</a></li>
+                <li class="active"><a href="{{ app.url_generator.generate('admin_lectorium') }}">Lectorium</a></li>
+                <li><a href="{{ app.url_generator.generate('admin_shop') }}">Shop</a></li>
+                <li><a href="{{ app.url_generator.generate('admin_concept') }}">Concept</a></li>
+                <li><a href="{{ app.url_generator.generate('admin_contacts') }}">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template"><br><br><br>
+        <h1>Coworking friends</h1>
+        <form  method="POST" enctype="multipart/form-data"  action="{{ app.url_generator.generate('admin_shop_img_add') }}">
+            Name <br>
+            <input type="hidden" name='id' value = "{{ id }}"/>
+            Name <br>
+            <input name='name' value="{{ name }}"/>
+            <br>Price
+            <input name='price' value="{{ price }}"/>
+            <br>
+            3D
+            <input type="checkbox" name='is3d' {% if is3d == 1  %} checked {% endif %}/>
+            <br>Description <br>
+            <textarea name="descr"> {{ descr}} </textarea>
+            <br>Type <br>
+            <input type="radio" name='type' value="1" {% if type == 1  %} checked {% endif %}/>
+            <input type="radio" name='type' value="2" {% if type == 2  %} checked {% endif %}/>
+            <input type="radio" name='type' value="3" {% if type == 3  %} checked {% endif %}/>
+            <input type="radio" name='type' value="4" {% if type == 4  %} checked {% endif %}/>
+
+            <br>year
+            <input name='year' value="{{ year }}"/>
+            <br>
+            is popular
+            <input type="checkbox" name='is_popular' {% if is_popular == 1  %} checked {% endif %}/>
+            <br>is concept
+            <input type="checkbox" name='is_concept' {% if is_concept == 1  %} checked {% endif %}/>
+            <br>
+            <br>
+            <input type="file" name="userfile" height="540" width="306"> <br>
+            <p><input type="submit"></p>
+            <img src="{{ src }}" alt="" width="400"/>
+
+        </form>
+    </div>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

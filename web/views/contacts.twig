@@ -1,0 +1,74 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+
+<section class="hero m-contacts">
+    <div class="row">
+        <a href="/" class="logo"></a>
+    </div>
+    <div class="hero-content m-about">
+        <h1 class="hero-ttl">CONTACTS</h1>
+        <p class="hero-txt">This is not a lecture, but a place to meet like-minded people,
+            it does not store the furniture, and free exposition of the
+            best Ukrainian design objects.</p>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="row m-plr80px">
+        <div class="square">
+            <div class="square-headline">Coworking space</div>
+            <div class="square-ttl">WRITE TO US</div>
+        </div>
+        <div class="u-flex">
+            <div class="contacts-genInfo">
+                <div class="address">
+                    <div class="address-primary">Kiev, Ukraine, 03150</div>
+                    <div class="address-secondary">Kazimira Malievicha (Bozhenko) 86 П, off.107</div>
+                    <div class="address-primary">T:+3 8(098) 483 08 60</div>
+                    <div class="address-secondary">office@2bua.com</div>
+                </div>
+            </div>
+            <div class="contacts-formWrapper">
+                <form action="" class="contacts-form">
+                    <div class="form-row">
+                        <input class="input" placeholder="NAME" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <input class="input" placeholder="PHONE NUMBER" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <input class="input" placeholder="EMAIL" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea class="textarea" placeholder="COMMENT" required></textarea>
+                    </div>
+                    <div class="form-row u-textRight">
+                        <button class="button">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="map"></section>
+
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>

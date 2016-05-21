@@ -1,0 +1,84 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+
+<section class="hero m-lectorium">
+    <div class="row">
+        <a href="/" class="logo"></a>
+    </div>
+    <div class="hero-content m-lectorium">
+        <h1 class="hero-ttl">LECTORIUM</h1>
+        <p class="hero-txt">{{ info }}</p>
+    </div>
+</section>
+
+<section class="lectorium">
+    <div class="row m-plr80px">
+        <div class="square">
+            <div class="square-headline">OUR EVENTS</div>
+            <div class="square-ttl">LECTURES AND SEMINARS</div>
+        </div>
+    </div>
+    <div class="row m-plr80px">
+        <div class="lectorium-inner u-flex">
+            <img src="../src/img/lectorium-inner.jpg" alt="" class="lectorium-inner-img">
+            <div class="lectorium-inner-description">
+                <div class="lectorium-inner-date">
+                    <div class="lectorium-inner-date-day">02</div>
+                    <div class="lectorium-inner-date-month">AUGUST</div>
+                </div>
+                <h1 class="lectorium-inner-ttl">Kiev first food and wine festival of the year</h1>
+                <p class="lectorium-inner-txt">Kiev Food & Wine Festival - gastronomic open
+                    air festival, which aims to create a culture
+                    of proper use of wine and gastroetiki.</p>
+
+                <p class="lectorium-inner-txt">2B.GROUP is an architectural bureau from Kyiv,
+                    Ukraine owed by two young architects, Viacheslav
+                    Balbek and Olga Bogdanova. For the past several
+                    years 2b.group team.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aside">
+    <div class="row u-flex m-plr80px m-flex-wrap">
+        {% for item in data %}
+            <a class="item-card">
+                <div class="item-card-header">
+                    <img class="item-card-img" src="{{ item.dest }}" alt="">
+                </div>
+                <div class="item-card-data m-smallPadding">
+                    <div class="item-card-dash dash"></div>
+                    <div class="item-card-date">
+                        <div class="item-card-date-day">{{ item.day }}</div>
+                        <div class="item-card-date-month">{{ item.month }}</div>
+                    </div>
+                    <p class="item-card-upperTxt">
+                        {{ item.data }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="map" class="map"></section>
+
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>

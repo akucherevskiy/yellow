@@ -1,0 +1,96 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+
+<section class="hero m-coworking">
+    <div class="row">
+        <a href="/" class="logo"></a>
+    </div>
+    <div class="hero-content m-about">
+        <h1 class="hero-ttl">COWORKING</h1>
+        <p class="hero-txt">{{ data[0].data }}</p>
+    </div>
+</section>
+<section class="coworking">
+    <div class="row m-plr80px">
+        <div class="square">
+            <div class="square-headline">Coworking space</div>
+            <div class="square-ttl">OUR FRIENDS</div>
+        </div>
+
+
+        <div class="coworking-items u-flex m-flex-wrap">
+            {% for item in data %}
+                    <div class="coworking-item">
+                        <img src={{ item.dest }} alt="" class="coworking-item-img">
+                        <div class="coworking-item-ttl">{{ item.name }}</div>
+                        <div class="coworking-item-txt"> {{ item.data }}
+                        </div>
+                        <div class="coworking-item-dash dash"></div>
+                    </div>
+            {% endfor %}
+
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+            <div class="coworking-item m-empty">
+                <div class="coworking-item-ctj">
+                    <div class="coworking-item-ctj-txt">JOIN US</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="map"></section>
+
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>

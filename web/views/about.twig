@@ -1,0 +1,79 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+
+<section class="hero m-about">
+    <div class="row">
+        <a href="/" class="logo"></a>
+    </div>
+    <div class="hero-content m-about">
+        <h1 class="hero-ttl">ABOUT</h1>
+        <p class="hero-txt">{{ about_1 }}</p>
+    </div>
+</section>
+
+<section class="about-gallery">
+    <div class="row">
+        <div class="about-gallery-selectors">
+            <div class="about-gallery-sel-lead">
+                <p class="about-gallery-sel-lead-text">{{ about_2 }}</p>
+            </div>
+            <div class="about-gallery-sel-side">
+                <div id="coworking-a" class="about-gallery-sel about-gallery-sel-side-1 is-active" data-gallery-id="1">
+                    <div class="about-gallery-sel-counter">
+                        <div class="about-gallery-sel-counter-1">16</div>
+                        <div class="about-gallery-sel-counter-2">Photos</div>
+                    </div>
+                </div>
+                <div id="coworking-b" class="about-gallery-sel about-gallery-sel-side-2" data-gallery-id="2">
+                    <div class="about-gallery-sel-counter">
+                        <div class="about-gallery-sel-counter-1">12</div>
+                        <div class="about-gallery-sel-counter-2">Photos</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-gallery-sel about-gallery-sel-main" data-gallery-id="3">
+                <div class="about-gallery-sel-counter">
+                    <div class="about-gallery-sel-counter-1">12</div>
+                    <div class="about-gallery-sel-counter-2">Photos</div>
+                </div>
+                <p class="about-gallery-sel-main-text">PROSTIR 86</p>
+            </div>
+        </div>
+    </div>
+    <div id="galleryCarousel" class="about-gallery-carousel">
+        <div class="row">
+            <div class="about-gallery-carousel-square square">
+                <div class="square-headline">Coworking space</div>
+                <div class="square-ttl">Coworking A</div>
+            </div>
+        </div>
+        <div class="about-gallery-carousel-images owl-carousel">
+            {% for item in c1 %}
+                <div class="about-gallery-carousel-images-item"><img src="{{ item.dest }}" alt="{{ item.name }} "></div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+<section id="map" class="map"></section>
+
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>

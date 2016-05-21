@@ -1,0 +1,143 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+
+<section class="home-hero">
+    <div class="row">
+
+        <a href="/" class="logo"></a>
+
+        <div class="home-hero-content">
+            <p class="home-hero-text">This is not a lecture, but a place to meet like-minded people,</br>
+                it does not store the furniture, and free exposition of the
+                best Ukrainian design objects.
+            </p>
+            <p class="home-hero-text m-alt">S.Balbek & O.Bogdanova</p>
+            <img class="home-hero-img" src="../src/img/balbek-bogdanova.png" alt="S.Balbek & O.Bogdanova">
+        </div>
+    </div>
+</section>
+
+<section class="home-coworking">
+    <div class="row">
+        <div class="home-coworking-content">
+
+            <div class="home-coworking-square square">
+                <div class="square-headline">Concept space</div>
+                <div class="square-ttl">Coworking</div>
+            </div>
+
+            <p class="home-coworking-text m-alt">independent professionals and those workplace flexibility work
+                better together than do alone.</p>
+
+            <div class="dash"></div>
+        </div>
+        <img class="home-coworking-img" src="../src/img/coworking.png" alt="Coworking">
+    </div>
+</section>
+
+<section class="home-lectorium">
+    <div class="row u-flex">
+        <ul class="home-lectorium-gallery u-flex">
+            <li>
+                <img src="../src/img/lectorium.jpg" alt="" width="540" height="306">
+            </li>
+            <!-- <li>
+               <img src="http://lorempixel.com/540/306/abstract/1" alt="" width="540" height="306">
+             </li>
+             <li>
+               <img src="http://lorempixel.com/540/306/abstract/2" alt="" width="540" height="306">
+             </li>
+             <li>
+               <img src="http://lorempixel.com/540/306/abstract/3" alt="" width="540" height="306">
+             </li>
+             <li>
+               <img src="http://lorempixel.com/540/306/abstract/4" alt="" width="540" height="306">
+             </li>
+             <li>
+               <img src="http://lorempixel.com/540/306/abstract/5" alt="" width="540" height="306">
+             </li>
+             <li>
+               <img src="http://lorempixel.com/540/306/abstract/6" alt="" width="540" height="306">
+             </li>-->
+        </ul>
+        <div class="home-lectorium-content">
+            <div class="home-lectorium-date">
+                <span class="home-lectorium-date-slash">/</span>
+                <span class="home-lectorium-date-day">02</span>
+                <span class="home-lectorium-date-month">AUGUST</span>
+            </div>
+            <p class="home-lectorium-text m-alt">Kiev first food and wine festival
+                of the year</p>
+
+            <p class="home-lectorium-text">Kiev Food & Wine Festival - gastronomic open
+                air festival, which aims to create a culture
+                of proper use of wine and gastroetiki.</p>
+
+            <div class="dash"></div>
+
+            <div class="home-lectorium-square square">
+                <div class="square-headline">Events calendar</div>
+                <div class="square-ttl">Lectorium</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="home-store">
+    <div class="row">
+        <div class="home-store-content">
+            <p class="home-store-text">We specializes in simple, accurate,
+                high-quality, and at the same time
+                comfortable and warm designs.
+                A special focus of Bureau.</p>
+            <img class="home-store-content-img" src="../src/img/store-2.jpg" alt="Store">
+
+            <div class="home-store-square square">
+                <div class="square-headline">Unique products</div>
+                <div class="square-ttl">Our store</div>
+            </div>
+
+        </div>
+        <img class="home-store-img" src="../src/img/store.png" alt="Store">
+    </div>
+</section>
+<section class="home-concept">
+    <div class="row u-flex">
+        <img class="home-concept-img" src="../src/img/concept.jpg" alt="Concept">
+        <div class="home-concept-content">
+
+            <div class="home-concept-square square">
+                <div class="square-headline">Concept products</div>
+                <div class="square-ttl">Concept</div>
+            </div>
+
+            <p class="home-concept-text">This is not a lecture, but a place to
+                like-minded people, it does not store
+                the furniture, and free exposition
+                Ukrainian design objects.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="map"></section>
+
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>
