@@ -49,8 +49,8 @@
       <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5605536" vertical-offset="72" max-vertical-offset="756">
-              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.5916955" vertical-offset="72" max-vertical-offset="756">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -632,6 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47231835" vertical-offset="3057" max-vertical-offset="19710">
           <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5605536" vertical-offset="72" max-vertical-offset="756">
-          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.5916955" vertical-offset="72" max-vertical-offset="756">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>

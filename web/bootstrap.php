@@ -32,7 +32,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
         'host'      => $url["host"],
         'dbname'    => substr($url["path"], 1),
         'user'      =>  $url["user"],
-        'password'  =>  $url["password"],
+        'password'  =>  $url["pass"],
         'charset'   => 'utf8mb4',
     ),
 ));
