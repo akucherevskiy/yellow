@@ -25,13 +25,14 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver'   => 'pdo_mysql',
-        'host'      => 'localhost',
-        'dbname'    => 'prostir',
-        'user'      => 'root',
-        'password'  => '',
+        'host'      => $url["host"],
+        'dbname'    => substr($url["path"], 1),
+        'user'      =>  $url["user"],
+        'password'  =>  $url["password"],
         'charset'   => 'utf8mb4',
     ),
 ));
