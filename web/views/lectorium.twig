@@ -30,7 +30,7 @@
             <img src="{{ data[0].bigSrc }}" alt="" class="lectorium-inner-img">
             <div class="lectorium-inner-description">
                 <div class="lectorium-inner-date">
-                    <div class="lectorium-inner-date-day">{{ data[0].day }}</div>
+                    <div class="lectorium-inner-date-day">{% if item.day|length ==1 %}0{% endif %}{{ item.day }}</div>
                     <div class="lectorium-inner-date-month">{{ data[0].month }}</div>
                 </div>
                 <h1 class="lectorium-inner-ttl">{{ data[0].name }}</h1>
@@ -46,6 +46,7 @@
             <a class="item-card">
                 <div class="item-card-header">
                     <img class="item-card-img" src="{{ item.dest }}" alt="">
+                    <img class="item-card-img" style="display:none" src="{{ item.bigSrc }}" alt="">
                 </div>
                 <div class="item-card-data m-smallPadding">
                     <div class="item-card-dash dash"></div>
