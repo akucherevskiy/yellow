@@ -36,46 +36,13 @@
                     </div>
             {% endfor %}
 
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
+            {% for i in 0..8 %}
+                <div class="coworking-item m-empty">
+                    <div class="coworking-item-ctj">
+                        <div class="coworking-item-ctj-txt"><a href="{{ app.url_generator.generate('contacts') }}" >JOIN US</a></div>
+                    </div>
                 </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
-            <div class="coworking-item m-empty">
-                <div class="coworking-item-ctj">
-                    <div class="coworking-item-ctj-txt">JOIN US</div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
