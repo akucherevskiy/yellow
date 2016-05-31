@@ -30,7 +30,7 @@
             <img src="{{ data[0].bigSrc }}" alt="" class="lectorium-inner-img">
             <div class="lectorium-inner-description">
                 <div class="lectorium-inner-date">
-                    <div class="lectorium-inner-date-day">{% if data[0].day|length ==1 %}0{% endif %}{{ item.day }}</div>
+                    <div class="lectorium-inner-date-day">{% if data[0].day|length ==1 %}0{% endif %}{{ data[0].day }}</div>
                     <div class="lectorium-inner-date-month">{{ data[0].month }}</div>
                 </div>
                 <h1 class="lectorium-inner-ttl">{{ data[0].name }}</h1>
