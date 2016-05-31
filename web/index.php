@@ -42,7 +42,7 @@ $app->get('/coworking', function () use ($app){
 	->bind('coworking');
 
 $app->get('/lectorium', function () use ($app){
-	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='lectorium' and type != 1 order by data.timestamp, type limit 4";
+	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='lectorium' and type is null order by data.timestamp, type limit 4";
 	$dataimg = $app['db']->fetchAll($sql);
 
 	$calendar = [
