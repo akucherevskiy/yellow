@@ -52,7 +52,7 @@ $app->post('/admin/img/add/', function () use ($app){
 $app->get('/admin/img/delete/{id}', function ($id) use ($app){
     $sql = "select * from img where id=".$id;
     $data = $app['db']->fetchAll($sql);
-    unlink(substr($data[0]['dest'], 6));
+    unlink(substr($data[0]['dest'], 3));
     $sql = "delete from img where id=".$id;
     $app['db']->executeQuery($sql);
 
@@ -146,7 +146,7 @@ $app->post('/admin/coworking/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/coworking/imgs/';
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-    $uploadfilesql = '../../src/img/coworking/imgs/' . basename($_FILES['userfile']['name']);
+    $uploadfilesql = '../src/img/coworking/imgs/' . basename($_FILES['userfile']['name']);
     move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 
     $user_id = $_REQUEST['alias'] ?: null;
@@ -173,7 +173,7 @@ $app->post('/admin/lectorium/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/lectorium/imgs/';
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-    $uploadfilesql = '../../src/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
+    $uploadfilesql = '../src/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
     $newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 
     $user_id = $_REQUEST['alias'] ?: null;
@@ -317,7 +317,7 @@ $app->post('/admin/shop/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/shop/imgs/';
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-    $uploadfilesql = '../../src/img/shop/imgs/' . basename($_FILES['userfile']['name']);
+    $uploadfilesql = '../src/img/shop/imgs/' . basename($_FILES['userfile']['name']);
     $newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
     $id = $_REQUEST['id'] ?: null;
 
