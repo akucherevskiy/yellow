@@ -35,7 +35,7 @@ $app->get('/about', function () use ($app){
 	->bind('about');
 
 $app->get('/coworking', function () use ($app){
-	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='coworking' order by data.id limit 5";
+	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='coworking' order by data.id limit 8";
 	$dataimg = $app['db']->fetchAll($sql);
 	return $app['twig']->render('coworking.twig', ['data' => $dataimg]);
 })
