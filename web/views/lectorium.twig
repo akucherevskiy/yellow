@@ -46,12 +46,11 @@
             <a class="item-card">
                 <div class="item-card-header">
                     <img class="item-card-img" src="{{ item.dest }}" alt="">
-                    <img class="item-card-img" src="{{ item.bigSrc }}" alt="">
                 </div>
                 <div class="item-card-data m-smallPadding">
                     <div class="item-card-dash dash"></div>
                     <div class="item-card-date">
-                        <div class="item-card-date-day">{{ item.day }}</div>
+                        <div class="item-card-date-day">{% if item.day|length ==1 %}0{% elseif %}{{ item.day }}</div>
                         <div class="item-card-date-month">{{ item.month }}</div>
                     </div>
                     <p class="item-card-upperTxt">
