@@ -76,24 +76,24 @@ $app->get('/lectorium', function () use ($app){
 $app->get('/shop', function () use ($app){
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['chairs'] = 1;
+	$data['chairs'] = $dataimg;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 2 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['lighting'] =2;
+	$data['lighting'] = $dataimg;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 3 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['bench'] = 3;
+	$data['bench'] = $dataimg;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 4 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['storage'] =4;
+	$data['storage'] = $dataimg;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
 	$popular = $app['db']->fetchAll($sql);
 
-	return $app['twig']->render('shop.twig', ['data' => $dataimg, 'popular'=> $popular]);
+	return $app['twig']->render('shop.twig', ['data' => $data, 'popular'=> $popular]);
 })->bind('shop');
 
 $app->get('/concept', function () use ($app){
