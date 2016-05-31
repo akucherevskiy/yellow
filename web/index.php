@@ -76,19 +76,19 @@ $app->get('/lectorium', function () use ($app){
 $app->get('/shop', function () use ($app){
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['chairs'] = $dataimg;
+	$data['chairs'] = 1;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 2 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['lighting'] = $dataimg;
+	$data['lighting'] =2;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 3 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['bench'] = $dataimg;
+	$data['bench'] = 3;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 4 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-	$data['storage'] = $dataimg;
+	$data['storage'] =4;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
 	$popular = $app['db']->fetchAll($sql);
