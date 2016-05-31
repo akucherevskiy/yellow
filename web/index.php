@@ -90,7 +90,7 @@ $app->get('/shop', function () use ($app){
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['storage'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0  and img.type = 1 ";
 	$popular = $app['db']->fetchAll($sql);
 
 	return $app['twig']->render('shop.twig', ['data' => $data, 'popular'=> $popular]);
@@ -101,7 +101,7 @@ $app->get('/product/{id}', function ($id) use ($app){
 	$sql = "SELECT *,products.name as sname FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.id=". $id;
 	$dataimg = $app['db']->fetchAll($sql);
 
-	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = " . $dataimg[0]['type']. " order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and img.type = 1  products.type = " . $dataimg[0]['type']. " order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$also = $dataimg;
 
