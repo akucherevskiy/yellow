@@ -27,21 +27,14 @@
     </div>
     <div class="row m-plr80px">
         <div class="lectorium-inner u-flex">
-            <img src="../src/img/lectorium-inner.jpg" alt="" class="lectorium-inner-img">
+            <img src="{{ item[0].bigSrc }}" alt="" class="lectorium-inner-img">
             <div class="lectorium-inner-description">
                 <div class="lectorium-inner-date">
-                    <div class="lectorium-inner-date-day">02</div>
-                    <div class="lectorium-inner-date-month">AUGUST</div>
+                    <div class="lectorium-inner-date-day">{{ item[0].day }}</div>
+                    <div class="lectorium-inner-date-month">{{ item[0].month }}</div>
                 </div>
-                <h1 class="lectorium-inner-ttl">Kiev first food and wine festival of the year</h1>
-                <p class="lectorium-inner-txt">Kiev Food & Wine Festival - gastronomic open
-                    air festival, which aims to create a culture
-                    of proper use of wine and gastroetiki.</p>
-
-                <p class="lectorium-inner-txt">2B.GROUP is an architectural bureau from Kyiv,
-                    Ukraine owed by two young architects, Viacheslav
-                    Balbek and Olga Bogdanova. For the past several
-                    years 2b.group team.</p>
+                <h1 class="lectorium-inner-ttl">{{ item[0].name }}</h1>
+                <p class="lectorium-inner-txt">{{ item[0].data }}</p>
             </div>
         </div>
     </div>
@@ -62,7 +55,7 @@
                         <div class="item-card-date-month">{{ item.month }}</div>
                     </div>
                     <p class="item-card-upperTxt">
-                        {{ item.data }}</p>
+                        {{ item.name }}</p>
                 </div>
             </a>
         {% endfor %}
