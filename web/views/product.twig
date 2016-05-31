@@ -54,12 +54,12 @@
         </div>
         <div class="shopItem-details">
             <div class="dash"></div>
-            <h1 class="shopItem-ttl">data[0]['name']</h1>
-            <h3 class="shopItem-subttl">CONCRETE FLOWERPOOL data[0]['year']</h3>
-            <p class="shopItem-description">data[0]['descr']
+            <h1 class="shopItem-ttl">{{ data[0]['name'] }}</h1>
+            <h3 class="shopItem-subttl">CONCRETE FLOWERPOOL {{ data[0]['year'] }}</h3>
+            <p class="shopItem-description">{{ data[0]['descr'] }}
             </p>
             <div class="u-flex">
-                <div class="shopItem-price">data[0]['price']</div>
+                <div class="shopItem-price">{{ data[0]['price']}}</div>
                 <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2">ORDER</button>
             </div>
         </div>
