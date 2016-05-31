@@ -68,7 +68,12 @@
 <section class="aside">
     <div class="row m-plr80px m-flex-wrap">
         <h1 class="aside-h1 h1">
-            <span>OTHER CHAIRS</span>
+            <span>OTHER
+            {% if data[0]['type'] ==1 %} CHAIRS
+                {% elseif data[0]['type']==2%} LIGHTING
+                {% elseif data[0]['type']==3%} BENCH
+                {% elseif data[0]['type']==4%} STORAGE
+            </span>
             <a class="aside-h1Link linkButton" href="">ALL PRODUCTS</a>
         </h1>
     </div>
