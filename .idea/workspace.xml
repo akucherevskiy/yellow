@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48a6a78d-73b7-4b61-a6bd-a6bac75109a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/lectorium.twig" afterPath="$PROJECT_DIR$/web/views/lectorium.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <ignored path="yellow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,14 +100,17 @@
       <file leaf-file-name="lectorium.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5916955" vertical-offset="594" max-vertical-offset="1476">
-              <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.40484428" vertical-offset="594" max-vertical-offset="1476">
+              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -855,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5916955" vertical-offset="594" max-vertical-offset="1476">
-          <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+        <state vertical-scroll-proportion="0.40484428" vertical-offset="594" max-vertical-offset="1476">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding />
         </state>
       </provider>

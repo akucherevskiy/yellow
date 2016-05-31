@@ -50,7 +50,7 @@
                 <div class="item-card-data m-smallPadding">
                     <div class="item-card-dash dash"></div>
                     <div class="item-card-date">
-                        <div class="item-card-date-day">{% if item.day|length ==1 %}0{% elseif %}{{ item.day }}</div>
+                        <div class="item-card-date-day">{% if item.day|length ==1 %}0{% endif %}{{ item.day }}</div>
                         <div class="item-card-date-month">{{ item.month }}</div>
                     </div>
                     <p class="item-card-upperTxt">
