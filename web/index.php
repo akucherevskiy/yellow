@@ -101,7 +101,12 @@ $app->get('/product/{id}', function ($id) use ($app){
 	$sql = "SELECT *,products.name as sname FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.id=". $id;
 	$dataimg = $app['db']->fetchAll($sql);
 
-	return $app['twig']->render('product.twig', ['data'=>$dataimg]);
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = " . $dataimg[0]['type']. " order by products.id";
+	$dataimg = $app['db']->fetchAll($sql);
+	$also = $dataimg;
+
+
+	return $app['twig']->render('product.twig', ['data'=>$dataimg, 'also' => $also]);
 })
 	->bind('product');
 

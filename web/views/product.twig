@@ -79,19 +79,20 @@
         </h1>
     </div>
     <div class="row u-flex m-plr80px m-flex-wrap">
-        <a class="item-card">
-            <div class="item-card-header">
-                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
-                <div class="item-card-3d"></div>
-            </div>
-            <div class="item-card-data">
-                <div class="item-card-dash dash"></div>
-                <div class="item-card-ttl">Solid head kashpo</div>
-                <div class="item-card-desc">Concrete flowerpot, 2014</div>
-                <div class="item-card-price">23.00 uah</div>
-            </div>
-        </a>
-
+        {% for item in also %}
+            <a class="item-card" href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
+                <div class="item-card-header">
+                    <img class="item-card-img" src="{{ item.dest }}" alt="">
+                    {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
+                </div>
+                <div class="item-card-data">
+                    <div class="item-card-dash dash"></div>
+                    <div class="item-card-ttl">{{ item.name }}</div>
+                    <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
+                    <div class="item-card-price">{{ item.price }}.00 uah</div>
+                </div>
+            </a>
+        {% endfor %}
     </div>
 </section>
 
