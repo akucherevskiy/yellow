@@ -63,7 +63,7 @@ $app->get('/lectorium', function () use ($app){
 	$datac1 = $app['db']->fetchAll($sql);
 	$res = [];
 	foreach($dataimg as $item){
-		$newQql = "SELECT * FROM data img where img.alias='lectorium' and user_id = ". $item["user_id"]. "  and type = 1";
+		$newQql = "SELECT * FROM img where img.alias='lectorium' and user_id = ". $item["user_id"]. "  and type = 1";
 		$dataimgNew = $app['db']->fetchAll($newQql);
 
 		$item['month'] = $calendar[$item['month']];
