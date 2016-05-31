@@ -14,147 +14,171 @@
     </div>
     <div class="hero-content m-shop">
         <h1 class="hero-ttl">shop</h1>
-        <p class="hero-txt"></p>
     </div>
 </section>
 
-<section class="shop">
-    <div class="row m-plr80px">
-        <div class="shop-header u-flex m-aligncenter">
-
-            <div class="shop-square square">
-                <div class="square-headline">Shop</div>
-                <div class="square-ttl">Our products</div>
-            </div>
-
-            <div class="basket-link">
-                <span>YOUR BASKET</span>
-                <span>(</span>
-                <span class="basket-link-counter">2</span>
-                <span>)</span>
-            </div>
+<section class="shopItem">
+    <div class="row">
+        <div class="backNav">
+            <a class="backNav-link" href="{{ app.url_generator.generate('shop') }}">GO BACK TO SHOP</a>
         </div>
     </div>
-    <div class="row m-plr80px">
-        <div class="shop-nav u-flex m-aligncenter">
-            <a class="shop-nav-cat is-active" href="#" data-cat-id="1">
-                <div class="shop-nav-cat-head">
-                    <img class="shop-nav-cat-img" src="../src/img/icons/chairs.png" alt="">
-                </div>
-                <div class="shop-nav-cat-ttl">CHAIRS</div>
-            </a>
-            <a class="shop-nav-cat" href="#" data-cat-id="2">
-                <div class="shop-nav-cat-head">
-                    <img class="shop-nav-cat-img" src="../src/img/icons/lighting.png" alt="">
-                </div>
-                <div class="shop-nav-cat-ttl">LIGHTING</div>
-            </a>
-            <a class="shop-nav-cat" href="#" data-cat-id="3">
-                <div class="shop-nav-cat-head">
-                    <img class="shop-nav-cat-img" src="../src/img/icons/bench.png" alt="">
-                </div>
-                <div class="shop-nav-cat-ttl">BENCH</div>
-            </a>
-            <a class="shop-nav-cat" href="#" data-cat-id="4">
-                <div class="shop-nav-cat-head">
-                    <img class="shop-nav-cat-img" src="../src/img/icons/storage.png" alt="">
-                </div>
-                <div class="shop-nav-cat-ttl">STORAGE</div>
-            </a>
+    <div class="shopItem-inner u-flex">
+        <div class="shopItem-gallery">
+            <div class="shopItem-gallery-inner">
+                <img class="shopItem-gallery-mainImg" src="../src/img/shop/5.jpg" alt="">
+                <ul id="shopItemGalleryCarousel" class="shopItem-gallery-carousel  u-flex m-aligncenter">
+                    <li class="shopItem-gallery-carouselItem is-active">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/1.jpg" alt="">
+                    </li>
+                    <li class="shopItem-gallery-carouselItem">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/2.jpg" alt="">
+                    </li>
+                    <li class="shopItem-gallery-carouselItem">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="shopItems" class="shop-items u-flex m-flex-wrap">
-            {% for item in data['chairs'] %}
-                <a class="item-card" href="shop_inner.html">
-                    <div class="item-card-header">
-                        <img class="item-card-img" src="{{ item.dest }}" alt="">
-                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
-                    </div>
-                    <div class="item-card-data">
-                        <div class="item-card-dash dash"></div>
-                        <div class="item-card-ttl">{{ item.name }}</div>
-                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
-                        <div class="item-card-price">{{ item.price }}.00 uah</div>
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
-        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
-
-            {% for item in data['lighting'] %}
-                <a class="item-card" href="shop_inner.html">
-                    <div class="item-card-header">
-                        <img class="item-card-img" src="{{ item.dest }}" alt="">
-                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
-                    </div>
-                    <div class="item-card-data">
-                        <div class="item-card-dash dash"></div>
-                        <div class="item-card-ttl">{{ item.name }}</div>
-                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
-                        <div class="item-card-price">{{ item.price }}.00 uah</div>
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
-        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
-
-        {% for item in data['bench'] %}
-                <a class="item-card" href="shop_inner.html">
-                    <div class="item-card-header">
-                        <img class="item-card-img" src="{{ item.dest }}" alt="">
-                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
-                    </div>
-                    <div class="item-card-data">
-                        <div class="item-card-dash dash"></div>
-                        <div class="item-card-ttl">{{ item.name }}</div>
-                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
-                        <div class="item-card-price">{{ item.price }}.00 uah</div>
-                    </div>
-                </a>
-            {% endfor %}
-        </div>
-        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
-            {% for item in data['storage'] %}
-                <a class="item-card" href="shop_inner.html">
-                    <div class="item-card-header">
-                        <img class="item-card-img" src="{{ item.dest }}" alt="">
-                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
-                    </div>
-                    <div class="item-card-data">
-                        <div class="item-card-dash dash"></div>
-                        <div class="item-card-ttl">{{ item.name }}</div>
-                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
-                        <div class="item-card-price">{{ item.price }}.00 uah</div>
-                    </div>
-                </a>
-            {% endfor %}
+        <div class="shopItem-details">
+            <div class="dash"></div>
+            <h1 class="shopItem-ttl">SOLID HEAD KASHPO</h1>
+            <h3 class="shopItem-subttl">CONCRETE FLOWERPOOL 2014</h3>
+            <p class="shopItem-description">A comfortable sofa convertible - this sofa and
+                chaise longue and the bed! Unfolded size bed
+                132cm x 189 cm Frame material - pine.
+            </p>
+            <div class="u-flex">
+                <div class="shopItem-price">23.00 UAH</div>
+                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2">ORDER</button>
+            </div>
+            <p class="shopItem-description2">Unfolded size bed 132cm x 189 cm
+                Frame material - pine. </p>
+            <div class="shopItem-sel">
+                <a class="shopItem-sel-link" href="">123C</a>
+                <a class="shopItem-sel-link" href="">3D2</a>
+                <a class="shopItem-sel-link" href="">3DM</a>
+                <a class="shopItem-sel-link is-active" href="">A2C</a>
+                <a class="shopItem-sel-link" href="">ACT</a>
+                <a class="shopItem-sel-link" href="">B3D</a>
+            </div>
         </div>
     </div>
 </section>
 <section class="aside">
     <div class="row m-plr80px m-flex-wrap">
-        <h1 class="aside-h1 h1">POPULAR PRODUCTS</h1>
+        <h1 class="aside-h1 h1">
+            <span>OTHER CHAIRS</span>
+            <a class="aside-h1Link linkButton" href="">ALL PRODUCTS</a>
+        </h1>
     </div>
     <div class="row u-flex m-plr80px m-flex-wrap">
-        {% for item in popular %}
-            <a class="item-card" href="shop_inner.html">
-                <div class="item-card-header">
-                    <img class="item-card-img" src="{{ item.dest }}" alt="">
-                    {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
-                </div>
-                <div class="item-card-data">
-                    <div class="item-card-dash dash"></div>
-                    <div class="item-card-ttl">{{ item.name }}</div>
-                    <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
-                    <div class="item-card-price">{{ item.price }}.00 uah</div>
-                </div>
-            </a>
-        {% endfor %}
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
     </div>
 </section>
-<section id="map" class="map"></section>
+
 <footer class="footer">
     <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
 </footer>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
         type="text/javascript"></script>
 <script src="../src/js/vendor/jquery.js"></script>
