@@ -100,7 +100,7 @@ $app->get('/shop', function () use ($app){
 $app->get('/product/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.id=". $id;
 	$dataimg = $app['db']->fetchAll($sql);
-
+var_dump($dataimg); die;
 	return $app['twig']->render('product.twig', ['data'=>$dataimg]);
 })
 	->bind('product');
