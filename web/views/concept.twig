@@ -66,8 +66,58 @@
             </a>
         </div>
         <div id="shopItems" class="shop-items u-flex m-flex-wrap">
-            {% for item in data %}
-                <a class="item-card" href="shop_inner.html">
+            {% for item in data['chairs'] %}
+                <a class="item-card" href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
+                    <div class="item-card-header">
+                        <img class="item-card-img" src="{{ item.dest }}" alt="">
+                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
+                    </div>
+                    <div class="item-card-data">
+                        <div class="item-card-dash dash"></div>
+                        <div class="item-card-ttl">{{ item.name }}</div>
+                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
+                        <div class="item-card-price">{{ item.price }}.00 uah</div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
+
+            {% for item in data['lighting'] %}
+                <a class="item-card"  href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
+                    <div class="item-card-header">
+                        <img class="item-card-img" src="{{ item.dest }}" alt="">
+                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
+                    </div>
+                    <div class="item-card-data">
+                        <div class="item-card-dash dash"></div>
+                        <div class="item-card-ttl">{{ item.name }}</div>
+                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
+                        <div class="item-card-price">{{ item.price }}.00 uah</div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
+
+            {% for item in data['bench'] %}
+                <a class="item-card"  href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
+                    <div class="item-card-header">
+                        <img class="item-card-img" src="{{ item.dest }}" alt="">
+                        {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
+                    </div>
+                    <div class="item-card-data">
+                        <div class="item-card-dash dash"></div>
+                        <div class="item-card-ttl">{{ item.name }}</div>
+                        <div class="item-card-desc">{{ item.descr }}, {{ item.year }}</div>
+                        <div class="item-card-price">{{ item.price }}.00 uah</div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div style='display:none' id="shopItems" class="shop-items u-flex m-flex-wrap">
+            {% for item in data['storage'] %}
+                <a class="item-card"  href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
                     <div class="item-card-header">
                         <img class="item-card-img" src="{{ item.dest }}" alt="">
                         {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
