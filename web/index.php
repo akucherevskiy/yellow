@@ -65,13 +65,10 @@ $app->get('/lectorium', function () use ($app){
 	foreach($dataimg as $item){
 		$newQql = "SELECT * FROM img where img.alias='lectorium' and user_id = ". $item["user_id"]. "  and type = 1";
 		$dataimgNew = $app['db']->fetchAll($newQql);
-
 		$item['month'] = $calendar[$item['month']];
 		$item['bigSrc'] = $dataimgNew[0]['dest'];
 		$res [] = $item;
-
 	}
-	var_dump($res); die;
 	return $app['twig']->render('lectorium.twig', ['data' => $res, 'info' => $datac1[0]['data']]);
 })
 	->bind('lectorium');
