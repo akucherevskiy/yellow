@@ -3,62 +3,177 @@
     <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
     <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
     <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
-    <a class="nav-link" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('shop') }}">Shop</a>
     <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
-    <a class="nav-link is-active" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
 </nav>
 
-<section class="hero m-contacts">
+<section class="hero m-shop">
     <div class="row">
         <a href="/" class="logo"></a>
     </div>
-    <div class="hero-content m-about">
-        <h1 class="hero-ttl">CONTACTS</h1>
-        <p class="hero-txt">This is not a lecture, but a place to meet like-minded people,
-            it does not store the furniture, and free exposition of the
-            best Ukrainian design objects.</p>
+    <div class="hero-content m-shop">
+        <h1 class="hero-ttl">shop</h1>
     </div>
 </section>
 
-<section class="contacts">
-    <div class="row m-plr80px">
-        <div class="square">
-            <div class="square-headline">Coworking space</div>
-            <div class="square-ttl">WRITE TO US</div>
+<section class="shopItem">
+    <div class="row">
+        <div class="backNav">
+            <a class="backNav-link" href="{{ app.url_generator.generate('shop') }}">GO BACK TO SHOP</a>
         </div>
-        <div class="u-flex">
-            <div class="contacts-genInfo">
-                <div class="address">
-                    <div class="address-primary">Kiev, Ukraine, 03150</div>
-                    <div class="address-secondary">Kazimira Malievicha (Bozhenko) 86 П, off.107</div>
-                    <div class="address-primary">T:+3 8(098) 483 08 60</div>
-                    <div class="address-secondary">office@2bua.com</div>
-                </div>
+    </div>
+    <div class="shopItem-inner u-flex">
+        <div class="shopItem-gallery">
+            <div class="shopItem-gallery-inner">
+                <img class="shopItem-gallery-mainImg" src="../src/img/shop/5.jpg" alt="">
+                <ul id="shopItemGalleryCarousel" class="shopItem-gallery-carousel  u-flex m-aligncenter">
+                    <li class="shopItem-gallery-carouselItem is-active">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/1.jpg" alt="">
+                    </li>
+                    <li class="shopItem-gallery-carouselItem">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/2.jpg" alt="">
+                    </li>
+                    <li class="shopItem-gallery-carouselItem">
+                        <img class="shopItem-gallery-carouselImg"
+                             src="../src/img/shop/3.jpg" alt="">
+                    </li>
+                </ul>
             </div>
-            <div class="contacts-formWrapper">
-                <form action="" class="contacts-form">
-                    <div class="form-row">
-                        <input class="input" placeholder="NAME" type="text" required>
-                    </div>
-                    <div class="form-row">
-                        <input class="input" placeholder="PHONE NUMBER" type="text" required>
-                    </div>
-                    <div class="form-row">
-                        <input class="input" placeholder="EMAIL" type="text" required>
-                    </div>
-                    <div class="form-row">
-                        <textarea class="textarea" placeholder="COMMENT" required></textarea>
-                    </div>
-                    <div class="form-row u-textRight">
-                        <button class="button">SEND</button>
-                    </div>
-                </form>
+        </div>
+        <div class="shopItem-details">
+            <div class="dash"></div>
+            <h1 class="shopItem-ttl">SOLID HEAD KASHPO</h1>
+            <h3 class="shopItem-subttl">CONCRETE FLOWERPOOL 2014</h3>
+            <p class="shopItem-description">A comfortable sofa convertible - this sofa and
+                chaise longue and the bed! Unfolded size bed
+                132cm x 189 cm Frame material - pine.
+            </p>
+            <div class="u-flex">
+                <div class="shopItem-price">23.00 UAH</div>
+                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2">ORDER</button>
+            </div>
+            <p class="shopItem-description2">Unfolded size bed 132cm x 189 cm
+                Frame material - pine. </p>
+            <div class="shopItem-sel">
+                <a class="shopItem-sel-link" href="">123C</a>
+                <a class="shopItem-sel-link" href="">3D2</a>
+                <a class="shopItem-sel-link" href="">3DM</a>
+                <a class="shopItem-sel-link is-active" href="">A2C</a>
+                <a class="shopItem-sel-link" href="">ACT</a>
+                <a class="shopItem-sel-link" href="">B3D</a>
             </div>
         </div>
     </div>
 </section>
-
-<section id="map" class="map"></section>
+<section class="aside">
+    <div class="row m-plr80px m-flex-wrap">
+        <h1 class="aside-h1 h1">
+            <span>OTHER CHAIRS</span>
+            <a class="aside-h1Link linkButton" href="">ALL PRODUCTS</a>
+        </h1>
+    </div>
+    <div class="row u-flex m-plr80px m-flex-wrap">
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="/assets/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+        <a class="item-card">
+            <div class="item-card-header">
+                <img class="item-card-img" src="../src/img/shop/1.jpg" alt="">
+                <div class="item-card-3d"></div>
+            </div>
+            <div class="item-card-data">
+                <div class="item-card-dash dash"></div>
+                <div class="item-card-ttl">Solid head kashpo</div>
+                <div class="item-card-desc">Concrete flowerpot, 2014</div>
+                <div class="item-card-price">23.00 uah</div>
+            </div>
+        </a>
+    </div>
+</section>
 
 <footer class="footer">
     <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
