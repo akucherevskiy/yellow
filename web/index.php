@@ -101,7 +101,7 @@ $app->get('/product/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.id=". $id;
 	$dataimg = $app['db']->fetchAll($sql);
 
-	return $app['twig']->render('contacts.twig', ['data'=>$dataimg]);
+	return $app['twig']->render('about.twig', ['data'=>$dataimg]);
 })
 	->bind('product');
 
@@ -117,6 +117,6 @@ $app->get('/contacts', function () use ($app){
 	return $app['twig']->render('contacts.twig', array(
 	));
 })
-	->bind('contacts');
+	->bind('');
 
 $app->run();
