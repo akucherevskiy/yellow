@@ -42,7 +42,7 @@ $app->get('/coworking', function () use ($app){
 	->bind('coworking');
 
 $app->get('/lectorium', function () use ($app){
-	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='lectorium' order by data.timestamp limit 4";
+	$sql = "SELECT * FROM data left JOIN img on img.user_id = data.id where img.alias='lectorium' order by data.timestamp, type limit 4";
 	$dataimg = $app['db']->fetchAll($sql);
 
 	$calendar = [
@@ -66,7 +66,7 @@ $app->get('/lectorium', function () use ($app){
 		$item['month'] = $calendar[$item['month']];
 		$res [] = $item;
 	}
-	var_dump($res); die;
+	var_dump($res[0]); die;
 	return $app['twig']->render('lectorium.twig', ['data' => $res, 'info' => $datac1[0]['data']]);
 })
 	->bind('lectorium');
