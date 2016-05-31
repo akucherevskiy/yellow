@@ -108,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/web/views/product.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.42639595" vertical-offset="846" max-vertical-offset="3438">
-              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+              <caret line="61" column="72" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -906,7 +906,7 @@
     <entry file="file://$PROJECT_DIR$/web/views/product.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42639595" vertical-offset="846" max-vertical-offset="3438">
-          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <caret line="61" column="72" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
           <folding />
         </state>
       </provider>
