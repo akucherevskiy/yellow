@@ -136,7 +136,7 @@
     </div>
     <div class="row u-flex m-plr80px m-flex-wrap">
         {% for item in popular %}
-            <a class="item-card"  href="{{ app.url_generator.generate('product', {'id': item.id}) }}">
+            <a class="item-card"  href="{{ app.url_generator.generate('product', {'id': item.ids}) }}">
                 <div class="item-card-header">
                     <img class="item-card-img" src="{{ item.dest }}" alt="">
                     {% if item.is3d == 1 %}<div class="item-card-3d"></div> {% endif %}
