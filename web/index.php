@@ -117,6 +117,6 @@ $app->get('/contacts', function () use ($app){
 	return $app['twig']->render('contacts.twig', array(
 	));
 })
-	->bind('');
+	->bind('contacts');
 
 $app->run();
