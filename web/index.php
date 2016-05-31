@@ -67,7 +67,7 @@ $app->get('/lectorium', function () use ($app){
 		$dataimgNew = $app['db']->fetchAll($newQql);
 
 		$item['month'] = $calendar[$item['month']];
-		$item['bigSrc'] = $dataimgNew['dest'];
+		$item['bigSrc'] = $dataimgNew[0]['dest'];
 		$res [] = $item;
 
 	}
