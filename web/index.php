@@ -74,23 +74,23 @@ $app->get('/lectorium', function () use ($app){
 	->bind('lectorium');
 
 $app->get('/shop', function () use ($app){
-	$sql = "SELECT *, products.id as ids FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['chairs'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 2 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 2 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['lighting'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 3 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 3 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['bench'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 4 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and products.type = 4 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['storage'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids FROM products  JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
 	$popular = $app['db']->fetchAll($sql);
 
 	return $app['twig']->render('shop.twig', ['data' => $data, 'popular'=> $popular]);
