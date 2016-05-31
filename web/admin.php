@@ -172,11 +172,15 @@ $app->post('/admin/coworking/img/add/', function () use ($app){
 $app->post('/admin/lectorium/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/lectorium/imgs/';
+    
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+    $uploadfileBig = $uploaddir . basename($_FILES['userfileBig']['name']);
+
     $uploadfilesql = '../src/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
     $uploadfilesqlBig = '../src/img/lectorium/imgs/' . basename($_FILES['userfileBig']['name']);
+
     $newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
-    $newImgBig = (bool)move_uploaded_file($_FILES['userfileBig']['tmp_name'], $uploadfile);
+    $newImgBig = (bool)move_uploaded_file($_FILES['userfileBig']['tmp_name'], $uploadfileBig);
 
     $user_id = $_REQUEST['alias'] ?: null;
     $name = $_REQUEST['name'] ?: null;
