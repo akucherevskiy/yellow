@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a6a78d-73b7-4b61-a6bd-a6bac75109a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/product.twig" afterPath="$PROJECT_DIR$/web/views/product.twig" />
     </list>
     <ignored path="yellow.iws" />
@@ -108,8 +107,8 @@
       <file leaf-file-name="product.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/product.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30456853" vertical-offset="486" max-vertical-offset="3654">
-              <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.67005074" vertical-offset="486" max-vertical-offset="3654">
+              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -956,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/product.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30456853" vertical-offset="486" max-vertical-offset="3654">
-          <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.67005074" vertical-offset="486" max-vertical-offset="3654">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding />
         </state>
       </provider>
