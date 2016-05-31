@@ -128,7 +128,7 @@ $app->get('/concept', function () use ($app){
 	$data['storage'] = $dataimg;
 
 
-	return $app['twig']->render('concept.twig', ['data'=>$dataimg]);
+	return $app['twig']->render('concept.twig', ['data'=>$data]);
 })
 	->bind('concept');
 
