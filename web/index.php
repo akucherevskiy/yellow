@@ -74,7 +74,7 @@ $app->get('/lectorium', function () use ($app){
 	->bind('lectorium');
 
 $app->get('/shop', function () use ($app){
-	$sql = "SELECT products.ids as ids, * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
+	$sql = "SELECT *, products.ids as ids FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and products.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['chairs'] = $dataimg;
 
