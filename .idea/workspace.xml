@@ -25,23 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.407408" vertical-offset="1276" max-vertical-offset="1854">
-              <caret line="94" column="20" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.93771625" vertical-offset="682" max-vertical-offset="1872">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding>
-                <marker date="1464694096083" expanded="true" signature="308:364" placeholder="SELECT * FRO..data..." />
-                <marker date="1464694096083" expanded="true" signature="414:453" placeholder="SELECT * FRO..img..." />
-                <marker date="1464694096083" expanded="true" signature="505:544" placeholder="SELECT * FRO..img..." />
-                <marker date="1464694096083" expanded="true" signature="596:635" placeholder="SELECT * FRO..img..." />
-                <marker date="1464694096083" expanded="true" signature="961:1070" placeholder="SELECT * FRO..data..." />
-                <marker date="1464694096083" expanded="true" signature="961:1071" placeholder="SELECT * FRO..data..." />
-                <marker date="1464694096083" expanded="true" signature="1267:1384" placeholder="SELECT * FRO..data..." />
-                <marker date="1464694096083" expanded="true" signature="1665:1714" placeholder="SELECT * FRO..data..." />
-                <marker date="1464694096083" expanded="true" signature="2039:2176" placeholder="SELECT * FRO..products..." />
-                <marker date="1464694096083" expanded="true" signature="2229:2373" placeholder="SELECT * FRO..products..." />
-                <marker date="1464694096083" expanded="true" signature="2578:2715" placeholder="SELECT * FRO..products..." />
+                <marker date="1464698617811" expanded="true" signature="308:364" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698617811" expanded="true" signature="414:453" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698617811" expanded="true" signature="505:544" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698617811" expanded="true" signature="596:635" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698617811" expanded="true" signature="961:1070" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698617811" expanded="true" signature="961:1071" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698617811" expanded="true" signature="1267:1384" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698617811" expanded="true" signature="1665:1714" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698617811" expanded="true" signature="2061:2198" placeholder="SELECT * FRO..products..." />
+                <marker date="1464698617811" expanded="true" signature="2251:2395" placeholder="SELECT * FRO..products..." />
+                <marker date="1464698617811" expanded="true" signature="2600:2737" placeholder="SELECT * FRO..products..." />
               </folding>
             </state>
           </provider>
@@ -60,82 +60,53 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2962964" vertical-offset="5509" max-vertical-offset="6570">
-              <caret line="311" column="60" selection-start-line="311" selection-start-column="60" selection-end-line="311" selection-end-column="60" />
+            <state vertical-scroll-proportion="-14.074074" vertical-offset="3148" max-vertical-offset="6678">
+              <caret line="196" column="95" selection-start-line="196" selection-start-column="95" selection-end-line="196" selection-end-column="95" />
               <folding>
-                <marker date="1464695230363" expanded="true" signature="331:376" placeholder="UPDATE data ..." />
-                <marker date="1464695230363" expanded="true" signature="867:947" placeholder="INSERT INTO ..." />
-                <marker date="1464695230363" expanded="true" signature="1617:1667" placeholder="INSERT INTO ..." />
-                <marker date="1464695230363" expanded="true" signature="1907:1934" placeholder="select * fro..img..." />
-                <marker date="1464695230363" expanded="true" signature="2034:2059" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="2314:2370" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="2686:2716" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="3012:3063" placeholder="SELECT * FRO..img..." />
-                <marker date="1464695230363" expanded="true" signature="3612:3661" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="3885:3915" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="4214:4244" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="4310:4344" placeholder="SELECT * FRO..img..." />
-                <marker date="1464695230363" expanded="true" signature="5386:5418" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="5490:5551" placeholder="INSERT INTO ..." />
-                <marker date="1464695230363" expanded="true" signature="5656:5702" placeholder="Update data ..." />
-                <marker date="1464695230363" expanded="true" signature="6601:6633" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="6728:6789" placeholder="INSERT INTO ..." />
-                <marker date="1464695230363" expanded="true" signature="6904:6981" placeholder="Update data ..." />
-                <marker date="1464695230363" expanded="true" signature="7242:7323" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="7555:7583" placeholder="delete FROM ..." />
-                <marker date="1464695230363" expanded="true" signature="7640:7672" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="7886:7916" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="7977:8011" placeholder="SELECT * FRO..img..." />
-                <marker date="1464695230363" expanded="true" signature="8647:8677" placeholder="SELECT * FRO..data..." />
-                <marker date="1464695230363" expanded="true" signature="9009:9031" placeholder="SELECT * FRO..products..." />
-                <marker date="1464695230363" expanded="true" signature="9761:9868" placeholder="INSERT INTO ..." />
-                <marker date="1464695230363" expanded="true" signature="10148:10182" placeholder="SELECT * FRO..products..." />
-                <marker date="1464695230363" expanded="true" signature="10243:10277" placeholder="SELECT * FRO..img..." />
-                <marker date="1464695230363" expanded="true" signature="10914:10946" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="11004:11036" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="11935:12043" placeholder="UPDATE produ..." />
-                <marker date="1464695230363" expanded="true" signature="12224:12256" placeholder="delete from ..." />
-                <marker date="1464695230363" expanded="true" signature="12347:12408" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="331:376" placeholder="UPDATE data ..." />
+                <marker date="1464698534651" expanded="true" signature="867:947" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="1617:1667" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="1907:1934" placeholder="select * fro..img..." />
+                <marker date="1464698534651" expanded="true" signature="2034:2059" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="2314:2370" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="2686:2716" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="3012:3063" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698534651" expanded="true" signature="3612:3661" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="3885:3915" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="4214:4244" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="4310:4344" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698534651" expanded="true" signature="5386:5418" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="5490:5551" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="5656:5702" placeholder="Update data ..." />
+                <marker date="1464698534651" expanded="true" signature="6790:6822" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="6917:6978" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="7118:7187" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="7308:7385" placeholder="Update data ..." />
+                <marker date="1464698534651" expanded="true" signature="7646:7727" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="7959:7987" placeholder="delete FROM ..." />
+                <marker date="1464698534651" expanded="true" signature="8044:8076" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="8290:8320" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="8381:8415" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698534651" expanded="true" signature="9051:9081" placeholder="SELECT * FRO..data..." />
+                <marker date="1464698534651" expanded="true" signature="9413:9435" placeholder="SELECT * FRO..products..." />
+                <marker date="1464698534651" expanded="true" signature="10165:10272" placeholder="INSERT INTO ..." />
+                <marker date="1464698534651" expanded="true" signature="10552:10586" placeholder="SELECT * FRO..products..." />
+                <marker date="1464698534651" expanded="true" signature="10647:10681" placeholder="SELECT * FRO..img..." />
+                <marker date="1464698534651" expanded="true" signature="11318:11350" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="11408:11440" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="12339:12447" placeholder="UPDATE produ..." />
+                <marker date="1464698534651" expanded="true" signature="12628:12660" placeholder="delete from ..." />
+                <marker date="1464698534651" expanded="true" signature="12751:12812" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coworking.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/views/coworking.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34602076" vertical-offset="484" max-vertical-offset="1260">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/shop.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="2160">
-              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="78" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="concept.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/concept.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1836">
-              <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lectorium.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/admin/lectorium.twig">
+        <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1368">
-              <caret line="55" column="20" selection-start-line="44" selection-start-column="8" selection-end-line="55" selection-end-column="20" />
+            <state vertical-scroll-proportion="-14.0" vertical-offset="594" max-vertical-offset="1602">
+              <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -167,7 +138,6 @@
         <option value="$PROJECT_DIR$/web/views/admin/coworking_add.twig" />
         <option value="$PROJECT_DIR$/web/views/admin/coworking_edit.twig" />
         <option value="$PROJECT_DIR$/web/views/admin/coworking.twig" />
-        <option value="$PROJECT_DIR$/web/views/admin/lectorium_edit.twig" />
         <option value="$PROJECT_DIR$/web/views/admin/lectorium.twig" />
         <option value="$PROJECT_DIR$/web/views/lectorium.twig" />
         <option value="$PROJECT_DIR$/web/views/admin/shop_add.twig" />
@@ -177,10 +147,11 @@
         <option value="$PROJECT_DIR$/web/views/admin/shop_edit.twig" />
         <option value="$PROJECT_DIR$/web/views/shop.twig" />
         <option value="$PROJECT_DIR$/web/views/concept.twig" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/bootstrap.php" />
-        <option value="$PROJECT_DIR$/web/admin.php" />
         <option value="$PROJECT_DIR$/web/views/coworking.twig" />
+        <option value="$PROJECT_DIR$/web/views/admin/lectorium_edit.twig" />
+        <option value="$PROJECT_DIR$/web/admin.php" />
+        <option value="$PROJECT_DIR$/web/index.php" />
       </list>
     </option>
   </component>
@@ -258,6 +229,28 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="yellow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="admin">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -680,13 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47231835" vertical-offset="3057" max-vertical-offset="19710">
           <caret line="185" column="38" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8781726" vertical-offset="741" max-vertical-offset="1602">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,24 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/admin/lectorium_add.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031141868" vertical-offset="378" max-vertical-offset="1188">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/admin/shop.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1152">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/admin/lectorium_edit.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="594" max-vertical-offset="1224">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -794,73 +767,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/coworking.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4074073" vertical-offset="484" max-vertical-offset="1260">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/admin/lectorium_add.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0553633" vertical-offset="610" max-vertical-offset="1188">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/admin/lectorium_edit.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.333334" vertical-offset="378" max-vertical-offset="1242">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2962964" vertical-offset="5509" max-vertical-offset="6570">
-          <caret line="311" column="60" selection-start-line="311" selection-start-column="60" selection-end-line="311" selection-end-column="60" />
+        <state vertical-scroll-proportion="-14.074074" vertical-offset="3148" max-vertical-offset="6678">
+          <caret line="196" column="95" selection-start-line="196" selection-start-column="95" selection-end-line="196" selection-end-column="95" />
           <folding>
-            <marker date="1464695230363" expanded="true" signature="331:376" placeholder="UPDATE data ..." />
-            <marker date="1464695230363" expanded="true" signature="867:947" placeholder="INSERT INTO ..." />
-            <marker date="1464695230363" expanded="true" signature="1617:1667" placeholder="INSERT INTO ..." />
-            <marker date="1464695230363" expanded="true" signature="1907:1934" placeholder="select * fro..img..." />
-            <marker date="1464695230363" expanded="true" signature="2034:2059" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="2314:2370" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="2686:2716" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="3012:3063" placeholder="SELECT * FRO..img..." />
-            <marker date="1464695230363" expanded="true" signature="3612:3661" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="3885:3915" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="4214:4244" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="4310:4344" placeholder="SELECT * FRO..img..." />
-            <marker date="1464695230363" expanded="true" signature="5386:5418" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="5490:5551" placeholder="INSERT INTO ..." />
-            <marker date="1464695230363" expanded="true" signature="5656:5702" placeholder="Update data ..." />
-            <marker date="1464695230363" expanded="true" signature="6601:6633" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="6728:6789" placeholder="INSERT INTO ..." />
-            <marker date="1464695230363" expanded="true" signature="6904:6981" placeholder="Update data ..." />
-            <marker date="1464695230363" expanded="true" signature="7242:7323" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="7555:7583" placeholder="delete FROM ..." />
-            <marker date="1464695230363" expanded="true" signature="7640:7672" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="7886:7916" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="7977:8011" placeholder="SELECT * FRO..img..." />
-            <marker date="1464695230363" expanded="true" signature="8647:8677" placeholder="SELECT * FRO..data..." />
-            <marker date="1464695230363" expanded="true" signature="9009:9031" placeholder="SELECT * FRO..products..." />
-            <marker date="1464695230363" expanded="true" signature="9761:9868" placeholder="INSERT INTO ..." />
-            <marker date="1464695230363" expanded="true" signature="10148:10182" placeholder="SELECT * FRO..products..." />
-            <marker date="1464695230363" expanded="true" signature="10243:10277" placeholder="SELECT * FRO..img..." />
-            <marker date="1464695230363" expanded="true" signature="10914:10946" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="11004:11036" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="11935:12043" placeholder="UPDATE produ..." />
-            <marker date="1464695230363" expanded="true" signature="12224:12256" placeholder="delete from ..." />
-            <marker date="1464695230363" expanded="true" signature="12347:12408" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="331:376" placeholder="UPDATE data ..." />
+            <marker date="1464698534651" expanded="true" signature="867:947" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="1617:1667" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="1907:1934" placeholder="select * fro..img..." />
+            <marker date="1464698534651" expanded="true" signature="2034:2059" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="2314:2370" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="2686:2716" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="3012:3063" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698534651" expanded="true" signature="3612:3661" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="3885:3915" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="4214:4244" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="4310:4344" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698534651" expanded="true" signature="5386:5418" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="5490:5551" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="5656:5702" placeholder="Update data ..." />
+            <marker date="1464698534651" expanded="true" signature="6790:6822" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="6917:6978" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="7118:7187" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="7308:7385" placeholder="Update data ..." />
+            <marker date="1464698534651" expanded="true" signature="7646:7727" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="7959:7987" placeholder="delete FROM ..." />
+            <marker date="1464698534651" expanded="true" signature="8044:8076" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="8290:8320" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="8381:8415" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698534651" expanded="true" signature="9051:9081" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698534651" expanded="true" signature="9413:9435" placeholder="SELECT * FRO..products..." />
+            <marker date="1464698534651" expanded="true" signature="10165:10272" placeholder="INSERT INTO ..." />
+            <marker date="1464698534651" expanded="true" signature="10552:10586" placeholder="SELECT * FRO..products..." />
+            <marker date="1464698534651" expanded="true" signature="10647:10681" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698534651" expanded="true" signature="11318:11350" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="11408:11440" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="12339:12447" placeholder="UPDATE produ..." />
+            <marker date="1464698534651" expanded="true" signature="12628:12660" placeholder="delete from ..." />
+            <marker date="1464698534651" expanded="true" signature="12751:12812" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0" vertical-offset="594" max-vertical-offset="1602">
+          <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.407408" vertical-offset="1276" max-vertical-offset="1854">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.93771625" vertical-offset="682" max-vertical-offset="1872">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding>
-            <marker date="1464694096083" expanded="true" signature="308:364" placeholder="SELECT * FRO..data..." />
-            <marker date="1464694096083" expanded="true" signature="414:453" placeholder="SELECT * FRO..img..." />
-            <marker date="1464694096083" expanded="true" signature="505:544" placeholder="SELECT * FRO..img..." />
-            <marker date="1464694096083" expanded="true" signature="596:635" placeholder="SELECT * FRO..img..." />
-            <marker date="1464694096083" expanded="true" signature="961:1070" placeholder="SELECT * FRO..data..." />
-            <marker date="1464694096083" expanded="true" signature="961:1071" placeholder="SELECT * FRO..data..." />
-            <marker date="1464694096083" expanded="true" signature="1267:1384" placeholder="SELECT * FRO..data..." />
-            <marker date="1464694096083" expanded="true" signature="1665:1714" placeholder="SELECT * FRO..data..." />
-            <marker date="1464694096083" expanded="true" signature="2039:2176" placeholder="SELECT * FRO..products..." />
-            <marker date="1464694096083" expanded="true" signature="2229:2373" placeholder="SELECT * FRO..products..." />
-            <marker date="1464694096083" expanded="true" signature="2578:2715" placeholder="SELECT * FRO..products..." />
+            <marker date="1464698617811" expanded="true" signature="308:364" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698617811" expanded="true" signature="414:453" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698617811" expanded="true" signature="505:544" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698617811" expanded="true" signature="596:635" placeholder="SELECT * FRO..img..." />
+            <marker date="1464698617811" expanded="true" signature="961:1070" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698617811" expanded="true" signature="961:1071" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698617811" expanded="true" signature="1267:1384" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698617811" expanded="true" signature="1665:1714" placeholder="SELECT * FRO..data..." />
+            <marker date="1464698617811" expanded="true" signature="2061:2198" placeholder="SELECT * FRO..products..." />
+            <marker date="1464698617811" expanded="true" signature="2251:2395" placeholder="SELECT * FRO..products..." />
+            <marker date="1464698617811" expanded="true" signature="2600:2737" placeholder="SELECT * FRO..products..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/coworking.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34602076" vertical-offset="484" max-vertical-offset="1260">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -174,7 +174,9 @@ $app->post('/admin/lectorium/img/add/', function () use ($app){
     $uploaddir = __DIR__.'/src/img/lectorium/imgs/';
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
     $uploadfilesql = '../src/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
+    $uploadfilesqlBig = '../src/img/lectorium/imgs/' . basename($_FILES['userfileBig']['name']);
     $newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
+    $newImgBig = (bool)move_uploaded_file($_FILES['userfileBig']['tmp_name'], $uploadfile);
 
     $user_id = $_REQUEST['alias'] ?: null;
     $name = $_REQUEST['name'] ?: null;
@@ -189,6 +191,10 @@ $app->post('/admin/lectorium/img/add/', function () use ($app){
     if ($newImg) {
         $sql = "INSERT INTO img (alias, name, dest, user_id) values (?,?,?,?)";
         $app['db']->executeQuery($sql, array('lectorium', $name, $uploadfilesql, $user_id));
+    }
+    if ($newImgBig) {
+        $sql = "INSERT INTO img (alias, name, dest, user_id, type) values (?,?,?,?,?)";
+        $app['db']->executeQuery($sql, array('lectorium', $name, $uploadfilesqlBig, $user_id, 1));
     }
 
     $sql = "Update  data set name= ?, data = ?, day=?, month=?, timestamp = ? where id = $user_id";
