@@ -66,7 +66,7 @@ $app->get('/lectorium', function () use ($app){
 		$item['month'] = $calendar[$item['month']];
 		$res [] = $item;
 	}
-	var_dump($res[0]); die;
+	var_dump($res[1]); die;
 	return $app['twig']->render('lectorium.twig', ['data' => $res, 'info' => $datac1[0]['data']]);
 })
 	->bind('lectorium');

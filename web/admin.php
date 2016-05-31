@@ -172,7 +172,7 @@ $app->post('/admin/coworking/img/add/', function () use ($app){
 $app->post('/admin/lectorium/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/lectorium/imgs/';
-    
+
     $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
     $uploadfileBig = $uploaddir . basename($_FILES['userfileBig']['name']);
 
