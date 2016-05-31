@@ -96,10 +96,19 @@ $app->get('/shop', function () use ($app){
 	return $app['twig']->render('shop.twig', ['data' => $data, 'popular'=> $popular]);
 })->bind('shop');
 
+
+$app->get('/product/{id}', function ($id) use ($app){
+	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and product.id=". $id;
+	$dataimg = $app['db']->fetchAll($sql);
+
+	return $app['twig']->render('product.twig', ['data'=>$dataimg]);
+})
+	->bind('product');
+
 $app->get('/concept', function () use ($app){
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
-
+var_dump($dataimg); die;
 	return $app['twig']->render('concept.twig', ['data'=>$dataimg]);
 })
 	->bind('concept');

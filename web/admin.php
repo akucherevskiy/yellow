@@ -326,9 +326,19 @@ $app->get('/admin/shop/delete/{id}', function ($id) use ($app){
 $app->post('/admin/shop/img/add/', function () use ($app){
 
     $uploaddir = __DIR__.'/src/img/shop/imgs/';
-    $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-    $uploadfilesql = '../src/img/shop/imgs/' . basename($_FILES['userfile']['name']);
-    $newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
+
+    $uploadfile1 = $uploaddir . basename($_FILES['userfile1']['name']);
+    $uploadfilesql1 = '../src/img/shop/imgs/' . basename($_FILES['userfile1']['name']);
+    $newImg1 = (bool)move_uploaded_file($_FILES['userfile1']['tmp_name'], $uploadfile1);
+
+    $uploadfile2 = $uploaddir . basename($_FILES['userfile2']['name']);
+    $uploadfilesql2 = '../src/img/shop/imgs/' . basename($_FILES['userfile2']['name']);
+    $newImg2 = (bool)move_uploaded_file($_FILES['userfile2']['tmp_name'], $uploadfile2);
+
+    $uploadfile3 = $uploaddir . basename($_FILES['userfile3']['name']);
+    $uploadfilesql3 = '../src/img/shop/imgs/' . basename($_FILES['userfile3']['name']);
+    $newImg3 = (bool)move_uploaded_file($_FILES['userfile3']['tmp_name'], $uploadfile3);
+
     $id = $_REQUEST['id'] ?: null;
 
     $name = $_REQUEST['name'] ?: null;
@@ -343,14 +353,22 @@ $app->post('/admin/shop/img/add/', function () use ($app){
     $sql = "UPDATE products set name =?, price=?, descr=?, is3d=?, is_popular=?, type=?, year=?, is_concept=? where id =" . $id;
     $app['db']->executeQuery($sql, array($name, $price,  $desc, $is3d, $is_popular, $type, $year,$is_concept));
 
-    if ($_FILES['userfile']['size'] > 0) {
+    if ($_FILES['userfile1']['size'] > 0) {
         $sql = "delete from img where user_id = " . $id;
         $app['db']->executeQuery($sql);
     }
 
-    if ($newImg) {
+    if ($newImg1) {
+        $sql = "INSERT INTO img (alias, name, dest, user_id, type) values (?,?,?,?,?)";
+        $app['db']->executeQuery($sql, array('shop', $name, $uploadfilesql1, $id,1));
+    }
+    if ($newImg2) {
         $sql = "INSERT INTO img (alias, name, dest, user_id) values (?,?,?,?)";
-        $app['db']->executeQuery($sql, array('shop', $name, $uploadfilesql, $id));
+        $app['db']->executeQuery($sql, array('shop', $name, $uploadfilesql2, $id));
+    }
+    if ($newImg3) {
+        $sql = "INSERT INTO img (alias, name, dest, user_id) values (?,?,?,?)";
+        $app['db']->executeQuery($sql, array('shop', $name, $uploadfilesql3, $id));
     }
 
     return $app['twig']->render('admin/main.twig', array());
