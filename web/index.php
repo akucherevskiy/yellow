@@ -74,8 +74,21 @@ $app->get('/lectorium', function () use ($app){
 	->bind('lectorium');
 
 $app->get('/shop', function () use ($app){
-	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 order by products.id";
+	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
+	$data['chairs'] = $dataimg;
+
+	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0 and type = 2 order by products.id";
+	$dataimg = $app['db']->fetchAll($sql);
+	$data['lighting'] = $dataimg;
+
+	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and type = 3 order by products.id";
+	$dataimg = $app['db']->fetchAll($sql);
+	$data['bench'] = $dataimg;
+
+	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and type = 4 order by products.id";
+	$dataimg = $app['db']->fetchAll($sql);
+	$data['storage'] = $dataimg;
 
 	$sql = "SELECT * FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_popular = 1 and products.is_concept = 0";
 	$popular = $app['db']->fetchAll($sql);
