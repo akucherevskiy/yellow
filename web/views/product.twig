@@ -60,7 +60,7 @@
             </p>
             <div class="u-flex">
                 <div class="shopItem-price">{{ data[0]['price']}}.00 UAH</div>
-                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2"><a href="{{ app.url_generator.generate('shop') }}">ORDER</a></button>
+                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2">ORDER</button>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
                 {% elseif data[0]['type']==4%} STORAGE
                 {% endif %}
             </span>
-            <a class="aside-h1Link linkButton" href="">ALL PRODUCTS</a>
+            <a class="aside-h1Link linkButton" href="{{ app.url_generator.generate('shop') }}">ALL PRODUCTS</a>
         </h1>
     </div>
     <div class="row u-flex m-plr80px m-flex-wrap">
