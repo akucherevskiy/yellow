@@ -60,7 +60,7 @@
             </p>
             <div class="u-flex">
                 <div class="shopItem-price">{{ data[0]['price']}}.00 UAH</div>
-                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2">ORDER</button>
+                <button id="shopItemOrderBtn" class="button shopItem-orderBtn" data-id="2"><a href="{{ app.url_generator.generate('shop') }}">ORDER</a></button>
             </div>
         </div>
     </div>
