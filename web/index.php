@@ -102,9 +102,7 @@ $app->get('/product/{id}', function ($id) use ($app){
 	$dataimg = $app['db']->fetchAll($sql);
 
 	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 0  and img.type = 1 and products.type = " . $dataimg[0]['type']. " order by products.id";
-	$dataimg = $app['db']->fetchAll($sql);
-	$also = $dataimg;
-var_dump($dataimg); die;
+	$also = $app['db']->fetchAll($sql);
 
 	return $app['twig']->render('product.twig', ['data'=>$dataimg, 'also' => $also]);
 })
