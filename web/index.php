@@ -111,15 +111,15 @@ $app->get('/product/{id}', function ($id) use ($app){
 	->bind('product');
 
 $app->get('/concept', function () use ($app){
-	$sql = "SELECT *, products.id as ids, products.name as sname FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1   and products.type = 4 and img.type = 1 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1   and products.type = 1 and img.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['chairs'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1  and products.type = 4 and img.type = 1  order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1  and products.type = 2 and img.type = 1  order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['lighting'] = $dataimg;
 
-	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1  and products.type = 4  and img.type = 1 order by products.id";
+	$sql = "SELECT *, products.id as ids, products.name as sname FROM products  left JOIN img on img.user_id = products.id where img.alias='shop' and products.is_concept = 1  and products.type = 3  and img.type = 1 order by products.id";
 	$dataimg = $app['db']->fetchAll($sql);
 	$data['bench'] = $dataimg;
 
