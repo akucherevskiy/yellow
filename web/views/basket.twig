@@ -1,0 +1,93 @@
+{% include 'head.twig' %}
+<nav class="nav">
+    <a class="nav-link" href="{{ app.url_generator.generate('about') }}">About us</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('coworking') }}">Coworking</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('lectorium') }}">Lectorium</a>
+    <a class="nav-link is-active" href="{{ app.url_generator.generate('shop') }}">Shop</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('concept') }}">Concept</a>
+    <a class="nav-link" href="{{ app.url_generator.generate('contacts') }}">Contacts</a>
+</nav>
+<section class="hero m-basket">
+    <div class="row">
+        <a href="/" class="logo"></a>
+    </div>
+    <div class="hero-content m-basket">
+        <h1 class="hero-ttl">shop</h1>
+        <p class="hero-txt"></p>
+    </div>
+</section>
+
+<section class="basket">
+    <div class="row m-plr80px">
+        <div class="basket-square square">
+            <div class="square-headline">Shop</div>
+            <div class="square-ttl">shopping cart</div>
+        </div>
+
+        <table class="basket-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>PRODUCT</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+                <th>DELETE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="/assets/img/basket/1.jpg" alt="" class="basket-table-img"></td>
+                <td>
+                    <div class="basket-item-ttl">SOLID HEAD KASHPO</div>
+                    <div class="basket-item-subttl">CONCRETE FLOWERPOT, 2014</div>
+                </td>
+                <td>
+                    <div class="basket-item-controls">
+                        <button class="basket-item-btn basket-item-btn--remove">-</button>
+                        <input type="text" class="basket-item-input" value="1">
+                        <button class="basket-item-btn basket-item-btn--add">+</button>
+                    </div>
+                </td>
+                <td><div class="basket-item-price">23.00 UAH</div></td>
+                <td><button class="basket-item-delete">&times;</button></td>
+            </tr>
+            <tr>
+                <td><img src="/assets/img/basket/2.jpg" alt="" class="basket-table-img"></td>
+                <td>
+                    <div class="basket-item-ttl">SOLID HEAD KASHPO</div>
+                    <div class="basket-item-subttl">CONCRETE FLOWERPOT, 2014</div>
+                </td>
+                <td>
+                    <div class="basket-item-controls">
+                        <button class="basket-item-btn basket-item-btn--remove">-</button>
+                        <input type="text" class="basket-item-input" value="1">
+                        <button class="basket-item-btn basket-item-btn--add">+</button>
+                    </div>
+                </td>
+                <td><div class="basket-item-price">23.00 UAH</div></td>
+                <td><button class="basket-item-delete">&times;</button></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="basket-total u-flex m-aligncenter">
+            <a href="" class="backNav-link backNav-link--no-after">CONTINUE SHOPPING</a>
+            <div class="basket-total-price">
+                <span class="basket-total-price-i">TOTAL:</span>
+                <span class="basket-total-price-ii">290.00 UAH</span>
+            </div>
+            <button class="button">MAKE AN ORDER</button>
+        </div>
+    </div>
+</section>
+<section id="map" class="map"></section>
+<footer class="footer">
+    <p class="footer-copy">© Pravda studio. 2B.GROUP. All Rights Reserved</p>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlDD8JJd35i5hX-4td4MSBU0L3XM5USc"
+        type="text/javascript"></script>
+<script src="../src/js/vendor/jquery.js"></script>
+<script src="../src/js/vendor/owl.js"></script>
+<script src="../src/js/bundle.js"></script>
+
+</body>
+</html>

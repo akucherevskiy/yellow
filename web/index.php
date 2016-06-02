@@ -135,4 +135,9 @@ $app->get('/contacts', function () use ($app){
 })
 	->bind('contacts');
 
+$app->get('/basket', function () use ($app){
+	return $app['twig']->render('basket.twig', array());
+})
+	->bind('basket');
+
 $app->run();
