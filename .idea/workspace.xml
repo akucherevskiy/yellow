@@ -2,180 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a6a78d-73b7-4b61-a6bd-a6bac75109a0" name="Default" comment="&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/basket-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/bebasneue-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/bebasneue-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/bebasneue-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/bebasneue-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/bebasneue-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_light-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_light-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_light-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_light-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_regular-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_regular-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_regular-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_semibold-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_semibold-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_semibold-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_semibold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/fonts/proxima_nova_semibold-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/2b-group.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/2bgroup-large.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/2bgroup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/101.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/imgs/c1/iIS5dPEh1bw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/about/lectorium-inner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/balbek-bogdanova.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/carousel-temp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/concept-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/concept.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/contacts-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking-hero.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/101.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/1q8hGyngLHc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/I5nS7BIV1zg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/JFYz2Tv-BRo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/MCKCWIyi0tM.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/coworking/imgs/lectorium-inner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/arrow-back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/basket-large.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/basket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/bench.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/chairs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/gplus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/lighting.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/storage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/icons/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/intro-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/101.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/lectorium/imgs/lectorium-inner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/map-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/map-temp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/people/balbek.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/101.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/101.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/imgs/lectorium-inner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/shop/lectorium-inner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/store-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/img/store.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/about-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/add-to-basket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/google-maps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/shop-item-gallery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/shop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/js/vendor/owl.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/head.twig" afterPath="$PROJECT_DIR$/web/views/head.twig" />
     </list>
     <ignored path="yellow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -296,11 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basket.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basket.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/basket.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17766498" vertical-offset="579" max-vertical-offset="1764">
+            <state vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="1764">
               <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/head.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18274112" vertical-offset="0" max-vertical-offset="591">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -385,6 +222,7 @@
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/views/basket.twig" />
         <option value="$PROJECT_DIR$/web/src/css/styles.css" />
+        <option value="$PROJECT_DIR$/web/views/head.twig" />
       </list>
     </option>
   </component>
@@ -461,7 +299,25 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assets/">
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="yellow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="assets">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -632,7 +488,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -642,7 +498,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19855885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19855885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979983" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -952,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/head.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/lectorium.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3333333" vertical-offset="702" max-vertical-offset="1494">
@@ -1080,8 +928,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/basket.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17766498" vertical-offset="579" max-vertical-offset="1764">
+        <state vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="1764">
           <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/head.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18274112" vertical-offset="0" max-vertical-offset="591">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
         </state>
       </provider>
