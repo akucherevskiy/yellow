@@ -28,7 +28,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver'   => 'pdo_mysql',
-        'host'      => "locahost",
+        'host'      => '127.0.0.1',
         'dbname'    => "prostir",
         'user'      =>  "root",
         'password'  =>  "kievskiypi",
