@@ -478,16 +478,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v3.0.6",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "856a0b75f634fa907cdc0fbce5bf2eb667a1673d"
+                "reference": "af3b13b5e0867d9abe9b5d3f226b46681fb807ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/856a0b75f634fa907cdc0fbce5bf2eb667a1673d",
-                "reference": "856a0b75f634fa907cdc0fbce5bf2eb667a1673d",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/af3b13b5e0867d9abe9b5d3f226b46681fb807ad",
+                "reference": "af3b13b5e0867d9abe9b5d3f226b46681fb807ad",
                 "shasum": ""
             },
             "require": {
@@ -528,7 +528,7 @@
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -555,7 +555,7 @@
             ],
             "description": "Symfony Twig Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-03-28 06:29:34"
+            "time": "2016-06-06 11:42:41"
         },
         {
             "name": "twbs/bootstrap",
@@ -610,16 +610,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.0",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
                 "shasum": ""
             },
             "require": {
@@ -667,7 +667,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-25 21:22:18"
+            "time": "2016-05-30 09:11:59"
         }
     ],
     "packages-dev": [],
