@@ -142,12 +142,12 @@ $app->get('/basket', function () use ($app){
 
 
 
-$app->get('/admin/', function () use ($app){
+$app->get('/adm/', function () use ($app){
 	return $app['twig']->render('admin/main.twig', array());
 })
 	->bind('admin');
 
-$app->post('/admin/edit', function () use ($app){
+$app->post('/adm/edit', function () use ($app){
 	$data = $_REQUEST['data'] ?:  NULL;
 	$name = $_REQUEST['name'] ?: NULL;
 	$id = $_REQUEST['id'] ?: NULL;
@@ -159,7 +159,7 @@ $app->post('/admin/edit', function () use ($app){
 })
 	->bind('admin_edit');
 
-$app->post('/admin/add/', function () use ($app){
+$app->post('/adm/add/', function () use ($app){
 	$item = $_REQUEST['item'] ?:  null;
 	$name = $_REQUEST['name'] ?: null;
 	$date = $_REQUEST['date'] ?: null;
@@ -174,7 +174,7 @@ $app->post('/admin/add/', function () use ($app){
 })
 	->bind('admin_add');
 
-$app->post('/admin/img/add/', function () use ($app){
+$app->post('/adm/img/add/', function () use ($app){
 	$uploaddir = __DIR__.'/src/img/about/imgs/'.$_REQUEST['id'] .'/';
 	$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 	$uploadfilesql = '../../src/img/about/imgs/'.$_REQUEST['id'] .'/' . basename($_FILES['userfile']['name']);
@@ -191,7 +191,7 @@ $app->post('/admin/img/add/', function () use ($app){
 })
 	->bind('admin_img_add');
 
-$app->get('/admin/img/delete/{id}', function ($id) use ($app){
+$app->get('/adm/img/delete/{id}', function ($id) use ($app){
 	$sql = "select * from img where id=".$id;
 	$data = $app['db']->fetchAll($sql);
 	unlink(substr($data[0]['dest'], 3));
@@ -204,7 +204,7 @@ $app->get('/admin/img/delete/{id}', function ($id) use ($app){
 
 //===============================================
 
-$app->get('/admin/about/', function () use ($app){
+$app->get('/adm/about/', function () use ($app){
 	$sql = "SELECT * FROM data WHERE alias IN ('about_1', 'about_2')";
 	$data = $app['db']->fetchAll($sql);
 	$returnArray = array(
@@ -215,7 +215,7 @@ $app->get('/admin/about/', function () use ($app){
 })
 	->bind('admin_about');
 
-$app->get('/admin/about/{id}', function ($id) use ($app){
+$app->get('/adm/about/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM data WHERE id = " . $id;
 	$data = $app['db']->fetchAll($sql);
 	$returnArray = array(
@@ -225,7 +225,7 @@ $app->get('/admin/about/{id}', function ($id) use ($app){
 	return $app['twig']->render('admin/about_item.twig', $returnArray);
 });
 
-$app->get('/admin/about_img/{alias}', function ($alias) use ($app){
+$app->get('/adm/about_img/{alias}', function ($alias) use ($app){
 	$sql = "SELECT * FROM img WHERE alias IN ('" . $alias . "')";
 	$data = $app['db']->fetchAll($sql);
 	$returnArray =
@@ -237,14 +237,14 @@ $app->get('/admin/about_img/{alias}', function ($alias) use ($app){
 	return $app['twig']->render('admin/about_img.twig', $returnArray);
 })->bind('admin_img');
 
-$app->get('/admin/about_add/{id}', function ($id) use ($app){
+$app->get('/adm/about_add/{id}', function ($id) use ($app){
 	return $app['twig']->render('admin/about_add.twig', ['alias'=>$id]);
 })
 	->bind('admin_about_add');
 
 //===============================================
 
-$app->get('/admin/coworking/', function () use ($app){
+$app->get('/adm/coworking/', function () use ($app){
 	$sql = "SELECT * FROM data WHERE alias IN ('coworking_1')";
 	$data = $app['db']->fetchAll($sql);
 
@@ -252,7 +252,7 @@ $app->get('/admin/coworking/', function () use ($app){
 })
 	->bind('admin_coworking');
 
-$app->get('/admin/coworking/{id}', function ($id) use ($app){
+$app->get('/adm/coworking/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM data WHERE id = " . $id;
 	$data = $app['db']->fetchAll($sql);
 	$returnArray = array(
@@ -262,7 +262,7 @@ $app->get('/admin/coworking/{id}', function ($id) use ($app){
 	return $app['twig']->render('admin/coworking_item.twig', $returnArray);
 });
 
-$app->get('/admin/coworking_edit/{id}', function ($id) use ($app){
+$app->get('/adm/coworking_edit/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM data WHERE id = ". $id . "";
 	$data = $app['db']->fetchAll($sql);
 
@@ -279,12 +279,12 @@ $app->get('/admin/coworking_edit/{id}', function ($id) use ($app){
 })
 	->bind('admin_coworking_edit');
 
-$app->get('/admin/coworking_add/{id}', function ($id) use ($app){
+$app->get('/adm/coworking_add/{id}', function ($id) use ($app){
 	return $app['twig']->render('admin/coworking_add.twig', array());
 })
 	->bind('admin_coworking_add');
 
-$app->post('/admin/coworking/img/add/', function () use ($app){
+$app->post('/adm/coworking/img/add/', function () use ($app){
 
 	$uploaddir = __DIR__.'/src/img/coworking/imgs/';
 	$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
@@ -311,7 +311,7 @@ $app->post('/admin/coworking/img/add/', function () use ($app){
 
 //===============================================
 
-$app->post('/admin/lectorium/img/add/', function () use ($app){
+$app->post('/adm/lectorium/img/add/', function () use ($app){
 
 	$uploaddir = __DIR__.'/src/img/lectorium/imgs/';
 
@@ -350,7 +350,7 @@ $app->post('/admin/lectorium/img/add/', function () use ($app){
 })
 	->bind('admin_lectorium_img_add');
 
-$app->get('/admin/lectorium/', function () use ($app){
+$app->get('/adm/lectorium/', function () use ($app){
 	$sql = "SELECT * FROM data WHERE alias IN ('lectorium_1', 'lectorium') order by timestamp ";
 	$data = $app['db']->fetchAll($sql);
 
@@ -358,7 +358,7 @@ $app->get('/admin/lectorium/', function () use ($app){
 })
 	->bind('admin_lectorium');
 
-$app->get('/admin/lectorium/delete/{id}', function ($id) use ($app){
+$app->get('/adm/lectorium/delete/{id}', function ($id) use ($app){
 	$sql = "delete FROM data WHERE id = ". $id;
 	$app['db']->executeQuery($sql);
 
@@ -369,7 +369,7 @@ $app->get('/admin/lectorium/delete/{id}', function ($id) use ($app){
 })
 	->bind('admin_lectorium_delete');
 
-$app->get('/admin/lectorium_edit/{id}', function ($id) use ($app){
+$app->get('/adm/lectorium_edit/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM data WHERE id = ". $id;
 	$data = $app['db']->fetchAll($sql);
 
@@ -388,12 +388,12 @@ $app->get('/admin/lectorium_edit/{id}', function ($id) use ($app){
 })
 	->bind('admin_lectorium_edit');
 
-$app->get('/admin/lectorium_add/', function () use ($app){
+$app->get('/adm/lectorium_add/', function () use ($app){
 	return $app['twig']->render('admin/lectorium_add.twig');
 })
 	->bind('admin_lectorium_add');
 
-$app->get('/admin/lectorium/{id}', function ($id) use ($app){
+$app->get('/adm/lectorium/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM data WHERE id = " . $id;
 	$data = $app['db']->fetchAll($sql);
 	$returnArray = array(
@@ -405,18 +405,18 @@ $app->get('/admin/lectorium/{id}', function ($id) use ($app){
 
 //===============================================
 
-$app->get('/admin/shop', function () use ($app){
+$app->get('/adm/shop', function () use ($app){
 	$sql = "SELECT * FROM products";
 	$data = $app['db']->fetchAll($sql);
 
 	return $app['twig']->render('admin/shop.twig', ['data' =>$data]);
 })->bind('admin_shop');
 
-$app->get('/admin/shop/addform/', function () use ($app){
+$app->get('/adm/shop/addform/', function () use ($app){
 	return $app['twig']->render('admin/shop_add_form.twig', array());
 })->bind('admin_shop_add_form');
 
-$app->post('/admin/shop/add/', function () use ($app){
+$app->post('/adm/shop/add/', function () use ($app){
 	$name = $_REQUEST['name'] ?: null;
 	$price = $_REQUEST['price'] ?: null;
 	$is3d = $_REQUEST['is3d'] == 'on' ? 1: 0;
@@ -432,7 +432,7 @@ $app->post('/admin/shop/add/', function () use ($app){
 	return $app['twig']->render('admin/main.twig', array());
 })->bind('admin_shop_add');
 
-$app->get('/admin/shop/edit/{id}', function ($id) use ($app){
+$app->get('/adm/shop/edit/{id}', function ($id) use ($app){
 	$sql = "SELECT * FROM products WHERE id = ". $id;
 	$data = $app['db']->fetchAll($sql);
 
@@ -455,7 +455,7 @@ $app->get('/admin/shop/edit/{id}', function ($id) use ($app){
 	return $app['twig']->render('admin/shop_edit.twig', $returnArray);
 })->bind('admin_shop_edit');
 
-$app->get('/admin/shop/delete/{id}', function ($id) use ($app){
+$app->get('/adm/shop/delete/{id}', function ($id) use ($app){
 	$sql = "delete from img where user_id = " . $id;
 	$app['db']->executeQuery($sql);
 
@@ -465,7 +465,7 @@ $app->get('/admin/shop/delete/{id}', function ($id) use ($app){
 })->bind('admin_shop_delete');
 
 
-$app->post('/admin/shop/img/add/', function () use ($app){
+$app->post('/adm/shop/img/add/', function () use ($app){
 
 	$uploaddir = __DIR__.'/src/img/shop/imgs/';
 
@@ -519,12 +519,12 @@ $app->post('/admin/shop/img/add/', function () use ($app){
 //===============================================
 
 
-$app->get('/admin/concept', function () use ($app){
+$app->get('/adm/concept', function () use ($app){
 	return $app['twig']->render('admin/concept.twig', array());
 })
 	->bind('admin_concept');
 
-$app->get('/admin/contacts', function () use ($app){
+$app->get('/adm/contacts', function () use ($app){
 	return $app['twig']->render('admin/contacts.twig', array());
 })
 	->bind('admin_contacts');
