@@ -14,14 +14,9 @@ export default (function aboutGallery($) {
   gallerySelector.on('click', function () {
     gallerySelector.removeClass(ACTIVE_CLASS);
     const galleryId = $(this).data('gallery-id');
-    $(this).addClass(ACTIVE_CLASS);
-    $.get(`partials/about/${galleryId}.html`)
-      .then((response)=> {
-        galleryContent.html(response);
-        $('body').animate({
-          scrollTop: $(galleryContent).offset().top
-        }, 1000);
-        $('.owl-carousel').owlCarousel(owlOptions)
-      });
+    $(this).addClass(ACTIVE_CLASS).siblings().remove(ACTIVE_CLASS);
+
+    $(`#${galleryId}`).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS)
+    
   });
 }($));

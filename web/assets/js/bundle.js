@@ -66,6 +66,10 @@
 
 	var _googleMaps2 = _interopRequireDefault(_googleMaps);
 
+	var _lectorium = __webpack_require__(6);
+
+	var _lectorium2 = _interopRequireDefault(_lectorium);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
@@ -94,14 +98,9 @@
 	  gallerySelector.on('click', function () {
 	    gallerySelector.removeClass(ACTIVE_CLASS);
 	    var galleryId = $(this).data('gallery-id');
-	    $(this).addClass(ACTIVE_CLASS);
-	    $.get('partials/about/' + galleryId + '.html').then(function (response) {
-	      galleryContent.html(response);
-	      $('body').animate({
-	        scrollTop: $(galleryContent).offset().top
-	      }, 1000);
-	      $('.owl-carousel').owlCarousel(owlOptions);
-	    });
+	    $(this).addClass(ACTIVE_CLASS).siblings().remove(ACTIVE_CLASS);
+
+	    $('#' + galleryId).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS);
 	  });
 	}($);
 
@@ -116,21 +115,22 @@
 	});
 
 	exports.default = function shop() {
-	  var shopNavItem = $('.shop-nav-cat');
-	  var shopItems = $('#shopItems');
+	  var ACTIVE_CLASS = 'is-active';
+	  var $shopNavItem = $('.shop-nav-cat');
+	  var $shopItemPanes = $('.shop-item-pane');
 
-	  shopNavItem.on('click', function (e) {
-	    var ACTIVE_CLASS = 'is-active';
-	    e.preventDefault();
-	    shopItems.fadeOut(50);
-	    var catId = $(this).data('cat-id');
-	    $.get('/partials/shop/' + catId + '.html').then(function (response) {
-	      return shopItems.fadeOut(10, function () {
-	        return shopItems.empty().html(response).fadeIn(500);
-	      });
+	  function toggleState() {
+	    Array.prototype.slice.call(arguments).forEach(function (elem) {
+	      return elem.addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS);
 	    });
+	  }
 
-	    $(this).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS);
+	  $shopNavItem.on('click', function (e) {
+	    e.preventDefault();
+
+	    var id = $(this).attr('href').split('#')[1];
+
+	    toggleState($(this), $('#' + id));
 	  });
 	}();
 
@@ -171,7 +171,7 @@
 	  var body = $('body');
 
 	  addItemBtn.on('click', function () {
-	    body.addClass('dialog-enabled').append('\n      <div class="backdrop"></div>\n      <div class="dialog">\n        <header class="dialog-header">\n          <button class="dialog-close">&times;</button>\n        </header>\n        <div class="dialog-body">\n        <img src="/assets/img/icons/basket-large.png" alt="" class="dialog-basketImg">\n          <p class="dialog-text">Product added to cart</p>\n          <div class="u-textCenter">\n            <a class="link dialog-button" href="shop.html">Continue shopping</a>\n            <a class="button dialog-button" href="#">GO TO BASKET</a>\n          </div>\n        </div>\n      </div>\n    ');
+	    body.addClass('dialog-enabled').append('\n      <div class="backdrop"></div>\n      <div class="dialog">\n        <header class="dialog-header">\n          <button class="dialog-close">&times;</button>\n        </header>\n        <div class="dialog-body">\n        <img src="/assets/img/icons/basket-large.png" alt="" class="dialog-basketImg">\n          <p class="dialog-text">Product added to cart</p>\n          <div class="u-textCenter">\n            <a class="link dialog-button" href="shop.html">Continue shopping</a>\n            <a class="button dialog-button" href="basket.html">GO TO BASKET</a>\n          </div>\n        </div>\n      </div>\n    ');
 	  });
 
 	  $(document).on('click', '.dialog-close', function () {
@@ -213,6 +213,38 @@
 	    d.mapTypes.set(a, g);
 	  }
 	}();
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = function lectoriumNews($) {
+	  var lectoriumWrapper = $('.lectorium .square');
+	  var item = $('.lectorium-item-card');
+	  var mainPostWrapper = $('.lectorium-inner');
+	  var mainPostImg = $('.lectorium-inner-img');
+	  var mainPostInner = $('.lectorium-inner-description');
+	  var mainPostDateDay = $('.lectorium-inner-date-day');
+	  var mainPostDateMonth = $('.lectorium-inner-date-month');
+	  var mainPostTitle = $('.lectorium-inner-ttl');
+	  var mainPostTxt = $('.lectorium-inner-txt');
+
+	  item.on('click', function ($event) {
+	    $event.preventDefault();
+	    mainPostImg.attr('src', $(this).find('.item-card-img-large').attr('src'));
+	    mainPostTitle.html($(this).find('.item-card-upperTxt').text());
+	    mainPostDateDay.html($(this).find('.item-card-date-day').text());
+	    mainPostDateMonth.html($(this).find('.item-card-date-month').text());
+	    mainPostTxt.html($(this).find('.item-card-txt').text());
+	    $(window).scrollTop($(lectoriumWrapper).offset().top);
+	  });
+	}($);
 
 /***/ }
 /******/ ]);

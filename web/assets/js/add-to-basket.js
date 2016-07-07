@@ -14,7 +14,7 @@ export default (function addToBasket() {
           <p class="dialog-text">Product added to cart</p>
           <div class="u-textCenter">
             <a class="link dialog-button" href="shop.html">Continue shopping</a>
-            <a class="button dialog-button" href="#">GO TO BASKET</a>
+            <a class="button dialog-button" href="basket.html">GO TO BASKET</a>
           </div>
         </div>
       </div>

@@ -3,4 +3,5 @@ import shop from './shop'
 import shopItemGallery from './shop-item-gallery'
 import basket from './add-to-basket'
 import googMap from './google-maps'
+import lectoriumNews from './lectorium'
 

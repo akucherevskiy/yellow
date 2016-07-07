@@ -1,20 +1,23 @@
 export default (function shop() {
-  const shopNavItem = $('.shop-nav-cat');
-  const shopItems = $('#shopItems');
+  const ACTIVE_CLASS = 'is-active';
+  const $shopNavItem = $('.shop-nav-cat');
+  const $shopItemPanes = $('.shop-item-pane');
 
-  shopNavItem.on('click', function (e) {
-    const ACTIVE_CLASS = 'is-active';
+  function toggleState() {
+    Array.prototype.slice.call(arguments)
+      .forEach((elem)=>
+        elem.addClass(ACTIVE_CLASS)
+            .siblings()
+            .removeClass(ACTIVE_CLASS));
+  }
+
+  $shopNavItem.on('click', function (e) {
     e.preventDefault();
-    shopItems.fadeOut(50);
-    const catId = $(this).data('cat-id');
-    $.get(`/partials/shop/${catId}.html`)
-      .then((response)=>
-        shopItems.fadeOut(10, ()=>
-          shopItems.empty().html(response).fadeIn(500)));
 
-    $(this)
-      .addClass(ACTIVE_CLASS)
-      .siblings()
-      .removeClass(ACTIVE_CLASS);
+    const id = $(this).attr('href').split('#')[1];
+
+    toggleState($(this), $('#' + id));
+
   });
+  
 }());

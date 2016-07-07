@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 require_once 'bootstrap.php';
-//require_once 'admin.php';
+
 use Doctrine\DBAL\Connection;
 $app->get('/', function () use ($app){
 	return $app['twig']->render('index.twig', array(
@@ -175,9 +175,9 @@ $app->post('/adm/add/', function () use ($app){
 	->bind('admin_add');
 
 $app->post('/adm/img/add/', function () use ($app){
-	$uploaddir = __DIR__.'/src/img/about/imgs/'.$_REQUEST['id'] .'/';
+	$uploaddir = __DIR__.'/assets/img/about/imgs/'.$_REQUEST['id'] .'/';
 	$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-	$uploadfilesql = '../../src/img/about/imgs/'.$_REQUEST['id'] .'/' . basename($_FILES['userfile']['name']);
+	$uploadfilesql = '/assets/img/about/imgs/'.$_REQUEST['id'] .'/' . basename($_FILES['userfile']['name']);
 	if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
 	} else {
 	}
@@ -286,9 +286,9 @@ $app->get('/adm/coworking_add/{id}', function ($id) use ($app){
 
 $app->post('/adm/coworking/img/add/', function () use ($app){
 
-	$uploaddir = __DIR__.'/src/img/coworking/imgs/';
+	$uploaddir = __DIR__.'/assets/img/coworking/imgs/';
 	$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-	$uploadfilesql = '../src/img/coworking/imgs/' . basename($_FILES['userfile']['name']);
+	$uploadfilesql = '/assets/img/coworking/imgs/' . basename($_FILES['userfile']['name']);
 	move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 
 	$user_id = $_REQUEST['alias'] ?: null;
@@ -313,13 +313,13 @@ $app->post('/adm/coworking/img/add/', function () use ($app){
 
 $app->post('/adm/lectorium/img/add/', function () use ($app){
 
-	$uploaddir = __DIR__.'/src/img/lectorium/imgs/';
+	$uploaddir = __DIR__.'/assets/img/lectorium/imgs/';
 
 	$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 	$uploadfileBig = $uploaddir . basename($_FILES['userfileBig']['name']);
 
-	$uploadfilesql = '../src/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
-	$uploadfilesqlBig = '../src/img/lectorium/imgs/' . basename($_FILES['userfileBig']['name']);
+	$uploadfilesql = '/assets/img/lectorium/imgs/' . basename($_FILES['userfile']['name']);
+	$uploadfilesqlBig = '/assets/img/lectorium/imgs/' . basename($_FILES['userfileBig']['name']);
 
 	$newImg = (bool)move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 	$newImgBig = (bool)move_uploaded_file($_FILES['userfileBig']['tmp_name'], $uploadfileBig);
@@ -467,18 +467,18 @@ $app->get('/adm/shop/delete/{id}', function ($id) use ($app){
 
 $app->post('/adm/shop/img/add/', function () use ($app){
 
-	$uploaddir = __DIR__.'/src/img/shop/imgs/';
+	$uploaddir = __DIR__.'/assets/img/shop/imgs/';
 
 	$uploadfile1 = $uploaddir . basename($_FILES['userfile1']['name']);
-	$uploadfilesql1 = '../src/img/shop/imgs/' . basename($_FILES['userfile1']['name']);
+	$uploadfilesql1 = '/assets/img/shop/imgs/' . basename($_FILES['userfile1']['name']);
 	$newImg1 = (bool)move_uploaded_file($_FILES['userfile1']['tmp_name'], $uploadfile1);
 
 	$uploadfile2 = $uploaddir . basename($_FILES['userfile2']['name']);
-	$uploadfilesql2 = '../src/img/shop/imgs/' . basename($_FILES['userfile2']['name']);
+	$uploadfilesql2 = '/assets/img/shop/imgs/' . basename($_FILES['userfile2']['name']);
 	$newImg2 = (bool)move_uploaded_file($_FILES['userfile2']['tmp_name'], $uploadfile2);
 
 	$uploadfile3 = $uploaddir . basename($_FILES['userfile3']['name']);
-	$uploadfilesql3 = '../src/img/shop/imgs/' . basename($_FILES['userfile3']['name']);
+	$uploadfilesql3 = '/assets/img/shop/imgs/' . basename($_FILES['userfile3']['name']);
 	$newImg3 = (bool)move_uploaded_file($_FILES['userfile3']['tmp_name'], $uploadfile3);
 
 	$id = $_REQUEST['id'] ?: null;
