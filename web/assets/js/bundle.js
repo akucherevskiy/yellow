@@ -171,7 +171,7 @@
 			var body = $('body');
 
 			addItemBtn.on('click', function () {
-				body.addClass('dialog-enabled').append('\n      <div class="backdrop"></div>\n      <div class="dialog">\n        <header class="dialog-header">\n          <button class="dialog-close">&times;</button>\n        </header>\n        <div class="dialog-body">\n        <img src="/assets/img/icons/basket-large.png" alt="" class="dialog-basketImg">\n          <p class="dialog-text">Product added to cart</p>\n          <div class="u-textCenter">\n            <a class="link dialog-button" href="http://prostir86.com/shop">Continue shopping</a>\n            <a class="button dialog-button" href="http://prostir86.com/basket">GO TO BASKET</a>\n          </div>\n        </div>\n      </div>\n    ');
+				body.addClass('dialog-enabled').append('\n      <div class="backdrop"></div>\n      <div class="dialog">\n        <header class="dialog-header">\n          <button class="dialog-close">&times;</button>\n        </header>\n        <div class="dialog-body">\n        <img src="/assets/img/icons/basket-large.png" alt="" class="dialog-basketImg">\n          <p class="dialog-text">Product added to cart</p>\n          <div class="u-textCenter">\n            <a class="link dialog-button" href="http://prostir86.com.ua/shop">Continue shopping</a>\n            <a class="button dialog-button" href="http://prostir86.com.ua/basket">GO TO BASKET</a>\n          </div>\n        </div>\n      </div>\n    ');
 			});
 
 			$(document).on('click', '.dialog-close', function () {
