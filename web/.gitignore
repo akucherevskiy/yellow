@@ -1,4 +1,4 @@
 bootstrap.php
 ../.idea/workspace.xml
-vendor/
-
+/assets/
+/vendor/
