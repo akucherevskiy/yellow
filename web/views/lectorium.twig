@@ -46,7 +46,7 @@
             <a class="item-card lectorium-item-card">
                 <div class="item-card-header">
                     <img class="item-card-img" src="{{ item.dest }}" alt="">
-                    <img class="item-card-img" style="display:none" src="{{ item.bigSrc }}" alt="">
+                    <img class="item-card-img  item-card-item-large" style="display:none" src="{{ item.bigSrc }}" alt="">
                 </div>
                 <div class="item-card-data m-smallPadding">
                     <div class="item-card-dash dash"></div>
@@ -54,6 +54,8 @@
                         <div class="item-card-date-day">{% if item.day|length ==1 %}0{% endif %}{{ item.day }}</div>
                         <div class="item-card-date-month">{{ item.month }}</div>
                     </div>
+                    <p class="item-card-txt" style="display: none;">{{ item.data }}
+                    </p>
                     <p class="item-card-upperTxt">
                         {{ item.name }}</p>
                 </div>
