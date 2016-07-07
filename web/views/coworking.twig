@@ -37,13 +37,11 @@
             {% endfor %}
 
             {% for i in 0..7 %}
-                <div class="coworking-item m-empty">
+                <a href="{{ app.url_generator.generate('contacts') }}" class="coworking-item m-empty">
                     <div class="coworking-item-ctj">
-                        <div class="coworking-item-ctj-txt">
-                            <a href="{{ app.url_generator.generate('contacts') }}" >JOIN US</a>
-                        </div>
+                        <div class="coworking-item-ctj-txt">JOIN US</div>
                     </div>
-                </div>
+                </a>
             {% endfor %}
         </div>
     </div>
