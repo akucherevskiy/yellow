@@ -28,10 +28,12 @@
             </div>
 
             <div class="basket-link">
-                <span>YOUR BASKET</span>
-                <span>(</span>
-                <span class="basket-link-counter">2</span>
-                <span>)</span>
+                <a href = '{{ app.url_generator.generate('basket') }}'>
+                    <span>YOUR BASKET</span>
+                    <span>(</span>
+                    <span class="basket-link-counter">2</span>
+                    <span>)</span>
+                </a>
             </div>
         </div>
     </div>
