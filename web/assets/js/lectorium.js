@@ -11,7 +11,7 @@ export default (function lectoriumNews($) {
 
   item.on('click', function ($event) {
     $event.preventDefault();
-    mainPostImg.attr('src', $(this).find('.item-card-img-large').attr('src'));
+    mainPostImg.attr('src', $(this).find('.item-card-item-large').attr('src'));
     mainPostTitle.html($(this).find('.item-card-upperTxt').text());
     mainPostDateDay.html($(this).find('.item-card-date-day').text());
     mainPostDateMonth.html($(this).find('.item-card-date-month').text());

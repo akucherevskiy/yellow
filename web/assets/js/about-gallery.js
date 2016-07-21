@@ -16,7 +16,11 @@ export default (function aboutGallery($) {
     const galleryId = $(this).data('gallery-id');
     $(this).addClass(ACTIVE_CLASS).siblings().remove(ACTIVE_CLASS);
 
-    $(`#${galleryId}`).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS)
+    $(`#${galleryId}`).addClass(ACTIVE_CLASS).siblings().removeClass(ACTIVE_CLASS);
+
+    $('body').animate({
+      scrollTop: $(galleryContent).offset().top
+    }, 1000);
     
   });
 }($));
